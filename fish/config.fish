@@ -23,6 +23,16 @@ abbr fdir 'fd --type d | fzf'
 # Find files and directories in home directory
 abbr fh 'fd . ~ | fzf'
 
+# Common directory shortcuts
+# Go to college directory
+abbr cds 'cd ~/Documents/college'
+# Quickly go to .config folder
+abbr cdc 'cd ~/.config'
+# Nvim config
+abbr cdcn 'cd ~/.config/nvim'
+# Fish config
+abbr cdcf 'cd ~/.config/fish'
+
 # Git Abbreviations
 abbr -a gitco git checkout
 abbr -a gitcoma 'git add -A && git commit -m'
