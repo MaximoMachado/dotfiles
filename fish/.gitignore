@@ -1,0 +1,16 @@
+# Exclude everything
+/*
+
+
+# Files to include
+!.gitignore
+
+
+# To include file within folder need to do some funky stuff
+!/functions/
+/functions/*
+!/functions/fish_prompt.fish
+
+!setup.fish
+!README.md
+!config.fish

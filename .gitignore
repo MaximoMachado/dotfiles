@@ -1,0 +1,12 @@
+# Exclude Everything
+/*
+
+# Folders to include
+!/tmux/
+!/nvim/
+!/fish/
+!/alacritty/
+
+# Files to include
+!.gitignore
+!setup.fish
