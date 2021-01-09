@@ -20,11 +20,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Commenting
         Plug 'tpope/vim-commentary'
         " Debugger
-        Plug 'puremourning/vimspector'
+        " Plug 'puremourning/vimspector'
         " Which Key
         Plug 'liuchengxu/vim-which-key'
         " Better Syntax Support
         Plug 'sheerun/vim-polyglot'
+        " Live Markdown Preview
+        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
         " Auto pairs for '(' '[' '{'
         Plug 'jiangmiao/auto-pairs'
         " Theme
