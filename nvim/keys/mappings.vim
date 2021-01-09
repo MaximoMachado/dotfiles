@@ -16,6 +16,10 @@ nnoremap <M-a> gg0<C-v>G$
 vnoremap < <gv
 vnoremap > >gv
 
+" Paste that only uses yanked text
+nnoremap <leader>p "0p
+nnoremap <leader>p "0P
+
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
     nmap <Tab> :Tabnext<CR>
