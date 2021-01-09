@@ -25,8 +25,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'liuchengxu/vim-which-key'
         " Better Syntax Support
         Plug 'sheerun/vim-polyglot'
-        " Live Markdown Preview
-        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
+        " Markdown Preview
+        Plug 'JamshedVesuna/vim-markdown-preview'
         " Auto pairs for '(' '[' '{'
         Plug 'jiangmiao/auto-pairs'
         " Theme
