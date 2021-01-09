@@ -20,10 +20,8 @@ vnoremap > >gv
 nnoremap <leader>p "0p
 nnoremap <leader>p "0P
 
-" Add capital letter versions to do action to end of line 
-nnoremap yY y$
-nnoremap dD d$
-nnoremap cC c$
+" Map capital Y to behave more like D and C
+nnoremap Y y$
 
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
