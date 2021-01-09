@@ -16,6 +16,7 @@ if !exists('g:vscode')
     source $HOME/.config/nvim/keys/which-key.vim
     source $HOME/.config/nvim/plug-config/fzf.vim
     source $HOME/.config/nvim/plug-config/coc.vim
+    source $HOME/.config/nvim/plug-config/coc-extensions.vim
     lua require'plug-colorizer'
     " source $HOME/.config/nvim/plug-config/sneak.vim
 else
