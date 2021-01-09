@@ -9,4 +9,5 @@
 
 # Files to include
 !.gitignore
+!README.md
 !setup.fish
