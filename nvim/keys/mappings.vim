@@ -10,17 +10,11 @@ map k <Down>
 noremap h i
 
 " Command to select everything (like Ctrl+A)
-nnoremap <M-a> gg<C-v>G$
+nnoremap <M-a> gg0<C-v>G$
 
 " BETTER TABBING
 vnoremap < <gv
 vnoremap > >gv
-
-" Window navigation to ijkl
-nnoremap <C-i> <C-w>k
-nnoremap <C-j> <C-w>h
-nnoremap <C-k> <C-w>j
-nnoremap <C-l> <C-w>l
 
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
@@ -28,6 +22,14 @@ if exists('g:vscode')
     nmap <S-Tab> :Tabprev<CR>
 else
     " Mappings from Christian Chiarulli (Modified to use ijkl)
+    " Window navigation to ijkl
+    nnoremap <C-i> <C-w>k
+    nnoremap <C-j> <C-w>h
+    nnoremap <C-k> <C-w>j
+    nnoremap <C-l> <C-w>l
+
+    " jj to escape
+    inoremap jj <Esc>   
 
     " Use Ctrl + Arrow keys to resize windows
     nnoremap <silent> <C-Up>      :resize -2<CR>
@@ -43,4 +45,3 @@ else
     " Alternate way to save
     " nnoremap <silent> <C-s> :w<CR>
 endif
-
