@@ -20,6 +20,11 @@ vnoremap > >gv
 nnoremap <leader>p "0p
 nnoremap <leader>p "0P
 
+" Add capital letter versions to do action to end of line 
+nnoremap yY y$
+nnoremap dD d$
+nnoremap cC c$
+
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
     nmap <Tab> :Tabnext<CR>
