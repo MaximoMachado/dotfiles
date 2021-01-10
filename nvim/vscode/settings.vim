@@ -4,6 +4,9 @@ nmap gc  <Plug>VSCodeCommentary
 omap gc  <Plug>VSCodeCommentary
 nmap gcc <Plug>VSCodeCommentaryLine
 
+" Rename symbol
+nnoremap gr :call VSCodeNotify('editor.action.rename')<CR>
+
 " Better Navigation
 nnoremap <silent> <M-k> :call VSCodeNotify('workbench.action.navigateDown')<CR>
 xnoremap <silent> <M-k> :call VSCodeNotify('workbench.action.navigateDown')<CR>
