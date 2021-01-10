@@ -13,8 +13,8 @@ noremap h i
 nnoremap <M-a> gg0<C-v>G$
 
 " BETTER TABBING
-vnoremap < <gv
-vnoremap > >gv
+xnoremap < <gv
+xnoremap > >gv
 
 " Paste that only uses yanked text
 nnoremap <leader>p "0p
