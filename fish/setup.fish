@@ -11,4 +11,4 @@ nvm install lts
 nvm use lts
 set -U nvm_default_version (nvm current)
 
-echo 'Fish Setup has ended.' 
+echo 'Fish setup has ended.' 
