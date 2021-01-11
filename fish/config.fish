@@ -17,21 +17,21 @@ abbr -a vim nvim
 
 # Searching through the file system
 # Find files in current directory
-abbr ff 'fd --type f | fzf'
+abbr -a ff 'fd --type f | fzf'
 # Find directories in current directory
-abbr fdir 'fd --type d | fzf'
+abbr -a fdir 'fd --type d | fzf'
 # Find files and directories in home directory
-abbr fh 'fd . ~ | fzf'
+abbr -a fh 'fd . ~ | fzf'
 
 # Common directory shortcuts
 # Go to college directory
-abbr cds 'cd ~/Documents/college'
+abbr -a cds 'cd ~/Documents/college'
 # Quickly go to .config folder
-abbr cdc 'cd ~/.config'
+abbr -a cdc 'cd ~/.config'
 # Nvim config
-abbr cdcn 'cd ~/.config/nvim'
+abbr -a cdcn 'cd ~/.config/nvim'
 # Fish config
-abbr cdcf 'cd ~/.config/fish'
+abbr -a cdcf 'cd ~/.config/fish'
 
 # Git Abbreviations
 abbr -a gitco git checkout
