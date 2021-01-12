@@ -23,10 +23,11 @@ pinch:
   out:
     command: "xdotool keydown ctrl click 5 keyup ctrl" # Zoom out
 tap:
-  3:
-    command: "xdotool key XF86AudioMute" # Toggle Audio Mute
   4:
     command: "xdotool key XF86AudioPlay" # Play/Pause Media
+hold:
+  4:
+    command: "xdotool key XF86AudioMute" # Toggle Audio Mute
 plugin: 
   inputs:
     libinput_command_input:
