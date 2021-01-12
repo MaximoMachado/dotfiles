@@ -1,24 +1,34 @@
 swipe:
-  3:
-    left:
-      command: "xdotool key ctrl+alt+Up" # Switch to previous workspace
-    right:
-      command: "xdotool key ctrl+alt+Down" # Switch to next workspace
-    up:
-      command: "xdotool key super" # Activity
-    down:
-      command: "xdotool key XF86AudioMute" # Toggle Audio Mute
+  # 3:
+  #   left:
+  #     command: "xdotool key ctrl+alt+Up" # Switch to previous workspace
+  #   right:
+  #     command: "xdotool key ctrl+alt+Down" # Switch to next workspace
+  #   up:
+  #     command: "xdotool key super" # Activity
+  #   down:
+  #     command: "xdotool key XF86AudioMute" # Toggle Audio Mute
   4:
     left:
-      command: "xdotool key XF86AudioPlay" # Play/Pause Media
+      command: "xdotool key XF86AudioPrev" # Previous Song
     right:
       command: "xdotool key XF86AudioNext" # Next Song 
     up:
-      command: "xdotool key XF86AudioRaiseVolume" # Raise Volume
+      command: "xdotool key ctrl+alt+Up" # Switch to previous workspace
     down:
-      command: "xdotool key XF86AudioLowerVolume" # Lower Volume
+      command: "xdotool key ctrl+alt+Down" # Switch to next workspace
 pinch:
   in:
     command: "xdotool keydown ctrl click 4 keyup ctrl" # Zoom in
   out:
     command: "xdotool keydown ctrl click 5 keyup ctrl" # Zoom out
+tap:
+  3:
+    command: "xdotool key XF86AudioMute" # Toggle Audio Mute
+  4:
+    command: "xdotool key XF86AudioPlay" # Play/Pause Media
+plugin: 
+  inputs:
+    libinput_command_input:
+      enable-tap: true
+      verbose: true
