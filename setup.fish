@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-# Fish terminal plugin setup
+# TODO Setup functions for user confirmation and using their preferred package manager
 ./fish/setup.fish
 ./nvim/setup.fish
 ./tmux/setup.fish
