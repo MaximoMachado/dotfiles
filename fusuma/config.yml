@@ -7,12 +7,12 @@ swipe:
     up:
       command: "xdotool key super" # Activity
     down:
-      command: "xdotool key super" # Activity
+      command: "xdotool key XF86AudioMute" # Toggle Audio Mute
   4:
     left:
       command: "xdotool key XF86AudioPlay" # Play/Pause Media
     right:
-      command: "xdotool key XF86AudioNext" # Next song 
+      command: "xdotool key XF86AudioNext" # Next Song 
     up:
       command: "xdotool key XF86AudioRaiseVolume" # Raise Volume
     down:
