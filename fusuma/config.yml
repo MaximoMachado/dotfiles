@@ -26,7 +26,7 @@ tap:
   4:
     command: "xdotool key XF86AudioPlay" # Play/Pause Media
 hold:
-  4:
+  3:
     command: "xdotool key XF86AudioMute" # Toggle Audio Mute
 plugin: 
   inputs:
