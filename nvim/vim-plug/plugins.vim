@@ -9,8 +9,12 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'tpope/vim-repeat'
+    " Highlight unique letters in each word for f/t
     Plug 'unblevable/quick-scope'
+    " Allows easy changing of surrounding chars
     Plug 'tpope/vim-surround'
+    " New keybinds and text objects for manipulating function arguments 
+    Plug 'PeterRincker/vim-argumentative'
     " Highlighted Yank
     Plug 'machakann/vim-highlightedyank'    
 
