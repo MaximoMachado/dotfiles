@@ -1,4 +1,4 @@
-" Config from Christian Chiarulli
+" Config based off of Christian Chiarulli's
 
 syntax enable                           " Enables syntax highlighing
 set termguicolors                       " Enable True Color

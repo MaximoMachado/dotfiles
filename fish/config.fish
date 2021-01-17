@@ -12,6 +12,10 @@ set -U nvm_default_version v14.15.4
 alias fd fdfind
 
 # Abbreviations
+# Map to interactive versions
+abbr -a mv 'mv -i'
+abbr -a rm 'rm -i'
+
 # Map vim to neovim
 abbr -a vim nvim
 
