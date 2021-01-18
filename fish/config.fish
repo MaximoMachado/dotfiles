@@ -12,6 +12,9 @@ set -U nvm_default_version v14.15.4
 alias fd fdfind
 
 # Abbreviations
+# System Commands
+# Some nice defaults for listing all
+abbr -a la 'ls -lA --group-directories-first'
 # Map to interactive versions
 abbr -a mv 'mv -i'
 abbr -a rm 'rm -i'
