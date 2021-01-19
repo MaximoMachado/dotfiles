@@ -17,13 +17,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Highlighted Yank
     Plug 'machakann/vim-highlightedyank'    
 
-    " Custom Text Objects
+    " Custom Text Objects Framework
     Plug 'kana/vim-textobj-user'
-    " Function Arguments
+    " Function Arguments (i, a,)
     Plug 'sgur/vim-textobj-parameter'
-    " Variable Segments for camel and snake case
+    " Variable Segments for camel and snake case (iv av)
     Plug 'Julian/vim-textobj-variable-segment'
-    " Entire File
+    " Current line (il al)
+    Plug 'kana/vim-textobj-line'
+    " Entire File (ie ae)
     Plug 'kana/vim-textobj-entire'
 
     if exists('g:vscode')
