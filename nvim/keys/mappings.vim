@@ -23,8 +23,8 @@ nnoremap <leader>p "0p
 nnoremap <leader>p "0P
 
 " Create new line without entering insert mode
-nnoremap <leader>k o<Esc><Up>
-nnoremap <leader>j O<Esc><Down>
+nnoremap <leader>j o<Esc><Up>
+nnoremap <leader>k O<Esc><Down>
 
 " Map capital Y to behave more like D and C
 nnoremap Y y$
