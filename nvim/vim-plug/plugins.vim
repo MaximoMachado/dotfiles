@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'unblevable/quick-scope'
     " Allows easy changing of surrounding chars
     Plug 'tpope/vim-surround'
+    " Swap text in two locations
+    Plug 'tommcdo/vim-exchange'
     " Highlighted Yank
     Plug 'machakann/vim-highlightedyank'    
 
