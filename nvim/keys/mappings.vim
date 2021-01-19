@@ -4,10 +4,10 @@ let g:mapleader=" "
 nnoremap <Space> <Nop>
 
 " Map hjkl to be ijkl (i.e. like WASD)
-map i <Up>
-map j <Left>
-map k <Down>
-noremap h i
+" map i <Up>
+" map j <Left>
+" map k <Down>
+" noremap h i
 
 " Command to select everything (like Ctrl+A)
 nnoremap <M-a> gg0<C-v>G$
@@ -30,9 +30,9 @@ if exists('g:vscode')
 else
     " Mappings from Christian Chiarulli (Modified to use ijkl)
     " Window navigation to ijkl
-    nnoremap <C-i> <C-w>k
-    nnoremap <C-j> <C-w>h
-    nnoremap <C-k> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
     nnoremap <C-l> <C-w>l
 
     " jj to escape
