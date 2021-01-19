@@ -3,7 +3,6 @@
 syntax enable                           " Enables syntax highlighing
 set termguicolors                       " Enable True Color
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
 set whichwrap+=<,>,[,],h,l
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
@@ -38,6 +37,10 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch                           " Searches as you type
 set undofile                            " Persistent undos on reboots and file exits
 set formatoptions-=cro                  " Stop newline continuation of comments (Doesn't work)
+
+" Text wraps to stay on screen and breaks in between words
+set wrap
+set linebreak
 
 " MISSING SEMESTER RECOMMENDED CONFIG
 " The backspace key has slightly unintuitive behavior by default. For example,
