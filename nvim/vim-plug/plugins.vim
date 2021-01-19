@@ -8,11 +8,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    Plug 'tpope/vim-repeat'
     " Highlight unique letters in each word for f/t
     Plug 'unblevable/quick-scope'
     " Allows easy changing of surrounding chars
-    Plug 'tpope/vim-surround'
+    Plug 'machakann/vim-sandwich'
     " Swap text in two locations
     Plug 'tommcdo/vim-exchange'
     " Highlighted Yank

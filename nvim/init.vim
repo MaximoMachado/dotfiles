@@ -12,7 +12,7 @@ if !exists('g:vscode')
     source $HOME/.config/nvim/themes/airline.vim
 
     " Plugin Setup
-    source $HOME/.config/nvim/plug-config/vimspector.vim
+    " source $HOME/.config/nvim/plug-config/vimspector.vim
     source $HOME/.config/nvim/keys/which-key.vim
     source $HOME/.config/nvim/plug-config/fzf.vim
     source $HOME/.config/nvim/plug-config/coc.vim
@@ -24,7 +24,7 @@ else
 endif
 
 source $HOME/.config/nvim/plug-config/quickscope.vim
-" Make damn sure automatic new-line comments are gone
+" Make sure automatic new-line comments are gone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Better nav for omnicomplete
