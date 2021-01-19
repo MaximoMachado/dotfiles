@@ -10,6 +10,8 @@
 !/functions/
 /functions/*
 !/functions/fish_prompt.fish
+!/functions/fish_user_key_bindings.fish
+!/functions/fish_mode_prompt.fish
 
 !setup.fish
 !README.md
