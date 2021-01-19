@@ -10,7 +10,8 @@ nnoremap <Space> <Nop>
 " noremap h i
 
 " Command to select everything (like Ctrl+A)
-nnoremap <M-a> gg0<C-v>G$
+" No longer needed thanks to entire buffer text object
+" nnoremap <M-a> gg0<C-v>G$
 
 " BETTER TABBING
 xnoremap < <gv

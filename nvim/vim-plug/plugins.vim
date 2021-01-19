@@ -18,8 +18,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Custom Text Objects
     Plug 'kana/vim-textobj-user'
-    " New keybinds and text objects for manipulating function arguments 
+    " Function Arguments
     Plug 'sgur/vim-textobj-parameter'
+    " Variable Segments for camel and snake case
+    Plug 'Julian/vim-textobj-variable-segment'
+    " Entire File
+    Plug 'kana/vim-textobj-entire'
 
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'
