@@ -32,7 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'MaximoMachado/vscode-easymotion'
     else
         " LaTeX Support
-        Plug 'lervag/vimtex'
+        " Plug 'lervag/vimtex'
         " Commenting
         Plug 'tpope/vim-commentary'
         " Debugger
