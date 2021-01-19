@@ -13,10 +13,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'unblevable/quick-scope'
     " Allows easy changing of surrounding chars
     Plug 'tpope/vim-surround'
-    " New keybinds and text objects for manipulating function arguments 
-    Plug 'PeterRincker/vim-argumentative'
     " Highlighted Yank
     Plug 'machakann/vim-highlightedyank'    
+
+    " Custom Text Objects
+    Plug 'kana/vim-textobj-user'
+    " New keybinds and text objects for manipulating function arguments 
+    Plug 'sgur/vim-textobj-parameter'
 
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'

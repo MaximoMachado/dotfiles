@@ -5,7 +5,6 @@ source $HOME/.config/nvim/keys/mappings.vim
 
 source $HOME/.config/nvim/plug-config/highlightedyank.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
-source $HOME/.config/nvim/plug-config/argumentative.vim
 
 if !exists('g:vscode')
     " Themes
