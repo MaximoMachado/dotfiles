@@ -24,19 +24,12 @@ xmap aqq <Plug>(textobj-sandwich-auto-a)
 omap iqq <Plug>(textobj-sandwich-auto-i)
 omap aqq <Plug>(textobj-sandwich-auto-a)
 
-" silent! nmap <unique> sa <Plug>(operator-sandwich-add)
+" Highlighting Support for VSCode
+if exists('g:vscode')
 
-" silent! xmap <unique> sa <Plug>(operator-sandwich-add)
-
-" silent! omap <unique> sa <Plug>(operator-sandwich-g@)
-
-
-
-" silent! nmap <unique><silent> sd <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-
-" silent! nmap <unique><silent> sr <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-
-" silent! nmap <unique><silent> sdb <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-
-" silent! nmap <unique><silent> srb <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-
+    " Buns is if minimal highlighting option is selected
+    highlight OperatorSandwichBuns guifg='#edc41f' gui=underline ctermfg=172 cterm=underline 
+    highlight OperatorSandwichChange guifg='#edc41f' gui=underline ctermfg='yellow' cterm=underline
+    highlight OperatorSandwichAdd guifg='#b1fa87' gui=underline ctermfg='green' cterm=underline
+    highlight OperatorSandwichDelete guifg='#000000' guibg='#cf5963' gui=none ctermbg='red' cterm=underline
+endif
