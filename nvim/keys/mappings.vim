@@ -54,7 +54,7 @@ else
     " Mappings from Christian Chiarulli
 
     " Easy splits
-    nnoremap <leader>= :vsplit<CR>
+    nnoremap <leader><bar> :vsplit<CR>
     nnoremap <leader>- :split<CR>
 
     " Window navigation to hjkl
