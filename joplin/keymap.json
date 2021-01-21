@@ -7,7 +7,7 @@
 	{ "keys": ["PAGE_UP"], "type": "function", "command": "page_up" },
 	{ "keys": ["PAGE_DOWN"], "type": "function", "command": "page_down" },
 	{ "keys": ["ENTER"], "type": "function", "command": "activate" },
-	{ "keys": ["DELETE", "BACKSPACE"], "type": "function", "command": "delete" },
+	{ "keys": ["DELETE", "BACKSPACE", "d"], "type": "function", "command": "delete" },
 	{ "keys": [" "], "command": "todo toggle $n" },
 	{ "keys": ["n"], "type": "function", "command": "next_link" },
 	{ "keys": ["b"], "type": "function", "command": "previous_link" },
