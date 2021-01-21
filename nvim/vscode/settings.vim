@@ -1,3 +1,6 @@
+" Need to reenable as no neovim status bar 
+set showmode
+
 " Remaps to vscode's auto comment rather than use vim-commentary
 xmap gc  <Plug>VSCodeCommentary
 nmap gc  <Plug>VSCodeCommentary
