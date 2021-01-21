@@ -10,12 +10,6 @@ let g:mapleader=" "
 " Prevent cursor moving over by one
 nnoremap <Space> <Nop>
 
-" Map hjkl to be ijkl (i.e. like WASD)
-" map i <Up>
-" map j <Left>
-" map k <Down>
-" noremap h i
-
 " By default enters Ex mode which isn't very useful
 nnoremap Q <Nop>
 
@@ -49,8 +43,6 @@ if exists('g:vscode')
     nmap <Tab> :Tabnext<CR>
     nmap <S-Tab> :Tabprev<CR>
 else
-    " Mappings from Christian Chiarulli
-
     " Easy splits
     nnoremap <leader><bar> :vsplit<CR>
     nnoremap <leader>- :split<CR>
@@ -75,6 +67,4 @@ else
     " SHIFT-TAB will go back
     nnoremap <silent> <S-TAB> :bprevious<CR>
 
-    " Alternate way to save
-    " nnoremap <silent> <C-s> :w<CR>
 endif
