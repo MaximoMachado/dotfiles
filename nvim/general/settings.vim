@@ -55,9 +55,6 @@ set linebreak
 set ignorecase
 set smartcase
 
-" Unbind some useless/annoying default key bindings.
-nmap Q <Nop>
-
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
 

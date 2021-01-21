@@ -1,8 +1,9 @@
 " Personal Configs
 " Free/Useless Keys that can be rebound
-" Q - enters Ex Mode by default
-" - - Goes up a line but cursor is on first non-whitespace character
-" + - goes down a line but cursor is on first non-whitespace character
+" Normal Q - enters Ex Mode by default
+" Normal - - Goes up a line but cursor is on first non-whitespace character
+" Normal + - goes down a line but cursor is on first non-whitespace character
+" Normal _ - goes down (count - 1) lines (can just use <CR> with a count one less)
 
 let g:mapleader=" "
 nnoremap <Space> <Nop>
@@ -17,13 +18,14 @@ nnoremap <Space> <Nop>
 " No longer needed thanks to entire buffer text object
 " nnoremap <M-a> gg0<C-v>G$
 
-" BETTER TABBING
+" By default enters Ex mode which isn't very useful
+nmap Q <Nop>
 
+" BETTER TABBING
 xnoremap < <gv
 xnoremap > >gv
 
 " Paste that only uses yanked text
-
 nnoremap <leader>p "0p
 nnoremap <leader>p "0P
 
@@ -40,8 +42,8 @@ if exists('g:vscode')
     nmap <Tab> :Tabnext<CR>
     nmap <S-Tab> :Tabprev<CR>
 else
-    " Mappings from Christian Chiarulli (Modified to use ijkl)
-    " Window navigation to ijkl
+    " Mappings from Christian Chiarulli
+    " Window navigation to hjkl
     nnoremap <C-k> <C-w>k
     nnoremap <C-h> <C-w>h
     nnoremap <C-j> <C-w>j
