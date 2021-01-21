@@ -1,5 +1,5 @@
-" Personal Configs
 " Free/Useless Keys that can be rebound
+" Personal Configs
 " Normal Q - enters Ex Mode by default
 " Normal - - Goes up a line but cursor is on first non-whitespace character
 " Normal + - goes down a line but cursor is on first non-whitespace character
@@ -19,7 +19,10 @@ nnoremap <Space> <Nop>
 " nnoremap <M-a> gg0<C-v>G$
 
 " By default enters Ex mode which isn't very useful
-nmap Q <Nop>
+nnoremap Q <Nop>
+
+" Map capital Y to behave more like D and C
+nnoremap Y y$
 
 " BETTER TABBING
 xnoremap < <gv
@@ -34,8 +37,14 @@ nnoremap <leader>p "0P
 nnoremap <silent> <leader>o :<C-u>call append(line("."),   repeat([""], v:count1))<CR>
 nnoremap <silent> <leader>O :<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>
 
-" Map capital Y to behave more like D and C
-nnoremap Y y$
+" Move current line up or down
+" Works with counts so (count)<C-j> moves ~count~ lines below cursor down by a line
+" Currently puts your cursor at the bottom of the selection after a move, incovenient if action is repeated
+nnoremap <expr> <C-j> ':.,.' . v:count . 'm+' . v:count1 . '<CR>=='
+nnoremap <expr> <C-k> ':.,.' . v:count . 'm-2<CR>=='
+
+vnoremap <silent> <C-j> :m '>+1<CR>gv=gv
+vnoremap <silent> <C-k> :m '<-2<CR>gv=gv
 
 if exists('g:vscode')
     " Simulate same TAB behavior in VSCode
@@ -43,11 +52,16 @@ if exists('g:vscode')
     nmap <S-Tab> :Tabprev<CR>
 else
     " Mappings from Christian Chiarulli
+
+    " Easy splits
+    nnoremap <leader>= :vsplit<CR>
+    nnoremap <leader>- :split<CR>
+
     " Window navigation to hjkl
-    nnoremap <C-k> <C-w>k
-    nnoremap <C-h> <C-w>h
-    nnoremap <C-j> <C-w>j
-    nnoremap <C-l> <C-w>l
+    nnoremap <leader>k <C-w>k
+    nnoremap <leader>h <C-w>h
+    nnoremap <leader>j <C-w>j
+    nnoremap <leader>l <C-w>l
 
     " jj to escape
     inoremap jj <Esc>
