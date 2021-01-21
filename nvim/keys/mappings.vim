@@ -1,4 +1,8 @@
 " Personal Configs
+" Free/Useless Keys that can be rebound
+" Q - enters Ex Mode by default
+" - - Goes up a line but cursor is on first non-whitespace character
+" + - goes down a line but cursor is on first non-whitespace character
 
 let g:mapleader=" "
 nnoremap <Space> <Nop>
@@ -14,6 +18,7 @@ nnoremap <Space> <Nop>
 " nnoremap <M-a> gg0<C-v>G$
 
 " BETTER TABBING
+
 xnoremap < <gv
 xnoremap > >gv
 
@@ -23,8 +28,9 @@ nnoremap <leader>p "0p
 nnoremap <leader>p "0P
 
 " Create new line without entering insert mode
-nnoremap <leader>j o<Esc><Up>
-nnoremap <leader>k O<Esc><Down>
+" Doesn't enter insert mode or move cursor so counts works correctly 
+nnoremap <silent> <leader>o :<C-u>call append(line("."),   repeat([""], v:count1))<CR>
+nnoremap <silent> <leader>O :<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>
 
 " Map capital Y to behave more like D and C
 nnoremap Y y$
@@ -42,7 +48,7 @@ else
     nnoremap <C-l> <C-w>l
 
     " jj to escape
-    inoremap jj <Esc>   
+    inoremap jj <Esc>
 
     " Use Ctrl + Arrow keys to resize windows
     nnoremap <silent> <C-Up>      :resize -2<CR>
