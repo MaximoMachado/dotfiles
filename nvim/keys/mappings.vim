@@ -1,11 +1,13 @@
 " Free/Useless Keys that can be rebound
 " Personal Configs
 " Normal Q - enters Ex Mode by default
-" Normal - - Goes up a line but cursor is on first non-whitespace character
+" Normal - - goes up a line but cursor is on first non-whitespace character
 " Normal + - goes down a line but cursor is on first non-whitespace character
 " Normal _ - goes down (count - 1) lines (can just use <CR> with a count one less)
+" Normal S - redundant with functionality of 'cc'
 
 let g:mapleader=" "
+" Prevent cursor moving over by one
 nnoremap <Space> <Nop>
 
 " Map hjkl to be ijkl (i.e. like WASD)
@@ -14,17 +16,13 @@ nnoremap <Space> <Nop>
 " map k <Down>
 " noremap h i
 
-" Command to select everything (like Ctrl+A)
-" No longer needed thanks to entire buffer text object
-" nnoremap <M-a> gg0<C-v>G$
-
 " By default enters Ex mode which isn't very useful
 nnoremap Q <Nop>
 
 " Map capital Y to behave more like D and C
 nnoremap Y y$
 
-" BETTER TABBING
+" BETTER TABBING (Stays in visual mode after tabbing)
 xnoremap < <gv
 xnoremap > >gv
 

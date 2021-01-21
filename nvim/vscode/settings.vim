@@ -7,6 +7,10 @@ nmap gcc <Plug>VSCodeCommentaryLine
 " Rename symbol
 nnoremap gr :call VSCodeNotify('editor.action.rename')<CR>
 
+" Window Splits
+nmap <leader><bar> <C-w>v
+nmap <leader>- <C-w>s
+
 " Better Navigation
 nnoremap <silent> <M-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
 xnoremap <silent> <M-j> :call VSCodeNotify('workbench.action.navigateDown')<CR>
