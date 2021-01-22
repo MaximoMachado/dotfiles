@@ -40,7 +40,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'MaximoMachado/vscode-easymotion'
     else
         " View Treesitter Information
-        Plug 'nvim-treesitter/playground'
+        " Plug 'nvim-treesitter/playground'
         " LaTeX Support
         " Plug 'lervag/vimtex'
         " Commenting

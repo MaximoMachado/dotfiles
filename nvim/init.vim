@@ -22,7 +22,7 @@ if !exists('g:vscode')
     source $HOME/.config/nvim/plug-config/coc-extensions.vim
     luafile $HOME/.config/nvim/lua/plug-colorizer.lua
     " source $HOME/.config/nvim/plug-config/sneak.vim
-    luafile $HOME/.config/nvim/lua/treesitter-playground.lua
+    " luafile $HOME/.config/nvim/lua/treesitter-playground.lua
 else
     source $HOME/.config/nvim/vscode/settings.vim    
 endif
