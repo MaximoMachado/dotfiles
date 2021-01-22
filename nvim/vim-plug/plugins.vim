@@ -41,18 +41,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     else
         " View Treesitter Information
         " Plug 'nvim-treesitter/playground'
-        " LaTeX Support
-        " Plug 'lervag/vimtex'
         " Commenting
         Plug 'tpope/vim-commentary'
-        " Debugger
-        " Plug 'puremourning/vimspector'
         " Which Key
         Plug 'liuchengxu/vim-which-key'
         " Better Syntax Support
         Plug 'sheerun/vim-polyglot'
-        " Markdown Preview
-        Plug 'JamshedVesuna/vim-markdown-preview'
         " Auto pairs for '(' '[' '{'
         Plug 'jiangmiao/auto-pairs'
         " Theme
