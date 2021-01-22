@@ -56,6 +56,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Status Bar 
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
+        " Smooth Scrolling
+        Plug 'psliwka/vim-smoothie'
         " fzf Installation
         Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
         Plug 'junegunn/fzf.vim'
