@@ -40,7 +40,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'MaximoMachado/vscode-easymotion'
     else
         " View Treesitter Information
-        " Plug 'nvim-treesitter/playground'
+        Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
         " Commenting
         Plug 'tpope/vim-commentary'
         " Which Key
@@ -63,8 +63,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'airblade/vim-rooter'
         " Git integration
         Plug 'airblade/vim-gitgutter'
-        Plug 'tpope/vim-fugitive'
-        Plug 'junegunn/gv.vim'
+        " Don't use these, maybe another time
+        " Plug 'tpope/vim-fugitive'
+        " Plug 'junegunn/gv.vim'
         " New Motions/Motion Addons
         " Plug 'justinmk/vim-sneak'
         Plug 'easymotion/vim-easymotion'

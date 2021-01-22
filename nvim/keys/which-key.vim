@@ -75,3 +75,11 @@ let g:which_key_map.s = {
       \ 'f' : [':FZF'          , 'Search Files'],
       \ }
 
+" Git-Gutter Keys
+let g:which_key_map.g = {
+      \ 'name' : '+ Git' ,
+      \ 'hs' : ['<Plug>(GitGutterStageHunk)'      , 'Stage Hunk'],
+      \ 'hu' : ['<Plug>(GitGutterUndoHunk)'      , 'Undo Hunk'],
+      \ 'hp' : ['<Plug>(GitGutterPreviewHunk)'      , 'Preview Hunk'],
+      \ }
+
