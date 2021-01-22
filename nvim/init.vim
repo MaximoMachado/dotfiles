@@ -7,6 +7,8 @@ source $HOME/.config/nvim/plug-config/highlightedyank.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/sandwich.vim
 
+source $HOME/.config/nvim/plug-config/textobj-user.vim
+
 if !exists('g:vscode')
     " Themes
     source $HOME/.config/nvim/themes/onedark.vim

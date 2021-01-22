@@ -36,8 +36,10 @@ let g:which_key_map['O'] = 'Prepend New Line'
 let g:which_key_map['t'] = {
       \ 'name' : '+ List Text Objects' ,
       \ ',' : ['', 'Function Parameter'],
-      \ 'c' : ['', 'Comment'],
-      \ 'C' : ['', 'Comment and Whitespace (a only)'],
+      \ 'f' : ['', 'Function'],
+      \ 'c' : ['', 'Class'],
+      \ 'a' : ['', 'Comment'],
+      \ 'A' : ['', 'Comment and Whitespace (a only)'],
       \ 'e' : ['', 'Entire Buffer'],
       \ 'l' : ['', 'Line'],
       \ 'q' : ['', 'Query Character'],
