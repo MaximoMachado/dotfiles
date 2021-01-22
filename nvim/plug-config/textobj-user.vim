@@ -10,3 +10,17 @@ xnoremap aA <Plug>(textobj-comment-big-a)
 
 onoremap ia <Plug>(textobj-comment-i)
 xnoremap ia <Plug>(textobj-comment-i)
+
+" -- Column Text Object --
+let g:textobj_wordcolumn_no_default_key_mappings = 1
+
+call textobj#user#map('wordcolumn', {
+            \ 'word' : {
+            \   'select-i' : 'ij',
+            \   'select-a' : 'aj',
+            \   },
+            \ 'WORD' : {
+            \   'select-i' : 'iJ',
+            \   'select-a' : 'aJ',
+            \   },
+            \ })

@@ -41,6 +41,8 @@ let g:which_key_map['t'] = {
       \ 'a' : ['', 'Comment'],
       \ 'A' : ['', 'Comment and Whitespace (a only)'],
       \ 'e' : ['', 'Entire Buffer'],
+      \ 'j' : ['', 'Column'],
+      \ 'J' : ['', 'Big Word Column'],
       \ 'l' : ['', 'Line'],
       \ 'q' : ['', 'Query Character'],
       \ 'qq' : ['', 'Auto Query'],
