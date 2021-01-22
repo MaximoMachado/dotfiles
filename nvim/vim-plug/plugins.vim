@@ -8,6 +8,11 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Syntax Tree to allow highlighting / text objects
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " Text objects for functions, classes, blocks, etc.
+    Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
     " Highlight unique letters in each word for f/t
     Plug 'unblevable/quick-scope'
     " Swap text in two locations
@@ -30,7 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kana/vim-textobj-entire'
     " Comments (ic ac iC aC)
     Plug 'glts/vim-textobj-comment'
-
+    
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'
     else
