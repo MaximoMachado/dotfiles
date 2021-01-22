@@ -37,7 +37,7 @@ let g:which_key_map['t'] = {
       \ 'name' : '+ List Text Objects' ,
       \ ',' : ['', 'Function Parameter'],
       \ 'c' : ['', 'Comment'],
-      \ 'C' : ['', 'Comment and Whitespace'],
+      \ 'C' : ['', 'Comment and Whitespace (a only)'],
       \ 'gc' : ['', 'Coc Class'],
       \ 'e' : ['', 'Entire Buffer'],
       \ 'gf' : ['', 'Coc Function'],
@@ -47,9 +47,13 @@ let g:which_key_map['t'] = {
       \ 'v' : ['', 'Variable Name Segment'],
       \ 's' : {
           \     'name' : '+ List Surround Objects',
-          \     'f'    : 'Function',
-          \     't'    : 'HTML Tag',
-          \     'i'    : 'Custom Head/Tail',
+          \     'f'    : ['', 'Function'],
+          \     't'    : ['', 'HTML Tag'],
+          \     'i'    : ['', 'Custom Head/Tail'],
+          \     'c'    : ['', 'LaTex Import/Include'],
+          \     'e'    : ['', 'LaTeX Environment'],
+          \     'ma'   : ['', 'LaTeX Math Brackets'],
+          \     'Ma'   : ['', 'LaTeX Big Math Brackets'],
           \   }
       \ }
 
