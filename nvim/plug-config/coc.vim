@@ -84,14 +84,14 @@ nmap <leader>f  <Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap igf <Plug>(coc-funcobj-i)
-omap igf <Plug>(coc-funcobj-i)
-xmap agf <Plug>(coc-funcobj-a)
-omap agf <Plug>(coc-funcobj-a)
-xmap igc <Plug>(coc-classobj-i)
-omap igc <Plug>(coc-classobj-i)
-xmap agc <Plug>(coc-classobj-a)
-omap agc <Plug>(coc-classobj-a)
+" xmap if <Plug>(coc-funcobj-i)
+" omap if <Plug>(coc-funcobj-i)
+" xmap af <Plug>(coc-funcobj-a)
+" omap af <Plug>(coc-funcobj-a)
+" xmap ic <Plug>(coc-classobj-i)
+" omap ic <Plug>(coc-classobj-i)
+" xmap ac <Plug>(coc-classobj-a)
+" omap ac <Plug>(coc-classobj-a)
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
