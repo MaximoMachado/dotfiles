@@ -63,6 +63,9 @@ let g:which_key_map['a'] = 'Code Actions'
 let g:which_key_map['ac'] = 'Code Actions on Buffer'
 let g:which_key_map['f'] = 'Quick Fix'
 
+let g:which_key_map[','] = 'Swap Argument Left'
+let g:which_key_map['<'] = 'Swap Argument Right'
+
 let g:which_key_map.s = {
       \ 'name' : '+ Search' ,
       \ 'b' : [':Buffers'      , 'Search Buffers'],
