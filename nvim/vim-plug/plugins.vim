@@ -10,12 +10,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Highlight unique letters in each word for f/t
     Plug 'unblevable/quick-scope'
-    " Allows easy changing of surrounding chars
-    Plug 'machakann/vim-sandwich'
     " Swap text in two locations
     Plug 'tommcdo/vim-exchange'
     " Highlighted Yank
     Plug 'machakann/vim-highlightedyank'    
+
+    " Allows easy changing of surrounding chars
+    Plug 'machakann/vim-sandwich'
 
     " Custom Text Objects Framework
     Plug 'kana/vim-textobj-user'

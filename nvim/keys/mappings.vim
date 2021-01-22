@@ -22,7 +22,7 @@ xnoremap > >gv
 
 " Paste that only uses yanked text
 nnoremap <leader>p "0p
-nnoremap <leader>p "0P
+nnoremap <leader>P "0P
 
 " Create new line without entering insert mode
 " Doesn't enter insert mode or move cursor so counts works correctly 
