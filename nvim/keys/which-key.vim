@@ -13,7 +13,6 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-
 " Create map to add keys to
 let g:which_key_map =  {}
 " Define a separator
@@ -44,6 +43,12 @@ let g:which_key_map['t'] = {
       \ 'q' : ['', 'Query Character'],
       \ 'qq' : ['', 'Auto Query'],
       \ 'v' : ['', 'Variable Name Segment'],
+      \ 's' : {
+          \     'name' : '+ List Surround Objects',
+          \     'f'    : 'Function',
+          \     't'    : 'HTML Tag',
+          \     'i'    : 'Custom Head/Tail',
+          \   }
       \ }
 
 " Plugins
