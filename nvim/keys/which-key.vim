@@ -5,10 +5,6 @@ call which_key#register('<Space>', "g:which_key_map")
 nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
-" See available text objects
-nnoremap <leader>wi :<C-u>WhichKey 'i'<CR>
-nnoremap <leader>wa :<C-u>WhichKey 'a'<CR>
-
 " Disable floating window
 let g:which_key_use_floating_win = 0
 
@@ -37,6 +33,18 @@ let g:which_key_map['P'] = 'Paste Yanked Before'
 let g:which_key_map['o'] = 'Append New Line'
 let g:which_key_map['O'] = 'Prepend New Line'
 
+" See available text objects (Need to update manually)
+let g:which_key_map['t'] = {
+      \ 'name' : '+ List Text Objects' ,
+      \ ',' : ['', 'Function Parameter'],
+      \ 'c' : ['', 'Coc Class'],
+      \ 'e' : ['', 'Entire Buffer'],
+      \ 'f' : ['', 'Coc Function'],
+      \ 'l' : ['', 'Line'],
+      \ 'q' : ['', 'Query Character'],
+      \ 'qq' : ['', 'Auto Query'],
+      \ 'v' : ['', 'Variable Name Segment'],
+      \ }
 
 " Plugins
 let g:which_key_map['e'] = 'Explorer'
