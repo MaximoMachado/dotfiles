@@ -24,6 +24,9 @@ xmap aqq <Plug>(textobj-sandwich-auto-a)
 omap iqq <Plug>(textobj-sandwich-auto-i)
 omap aqq <Plug>(textobj-sandwich-auto-a)
 
+" Adding new recipes based on text objects
+" let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
+
 " Highlighting Support for VSCode
 if exists('g:vscode')
 

@@ -28,6 +28,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kana/vim-textobj-line'
     " Entire File (ie ae)
     Plug 'kana/vim-textobj-entire'
+    " Comments (ic ac iC aC)
+    Plug 'glts/vim-textobj-comment'
 
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'
