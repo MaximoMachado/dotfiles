@@ -12,8 +12,9 @@ source $HOME/.config/nvim/plug-config/textobj-user.vim
 if !exists('g:vscode')
     " Themes
     source $HOME/.config/nvim/themes/onedark.vim
+    luafile $HOME/.config/nvim/lua/galaxyline-config.lua
     " source $HOME/.config/nvim/themes/airline.vim
-
+    
     " Plugin Setup
     " source $HOME/.config/nvim/plug-config/vimspector.vim
     source $HOME/.config/nvim/keys/which-key.vim
