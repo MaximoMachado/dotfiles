@@ -10,7 +10,6 @@ source $HOME/.config/nvim/plug-config/sandwich.vim
 source $HOME/.config/nvim/plug-config/textobj-user.vim
 
 if !exists('g:vscode')
-    source $HOME/.config/nvim/plug-config/firenvim.vim
     " Themes
     " Keep background and line numbers transparent
     source $HOME/.config/nvim/themes/onedark.vim
@@ -26,6 +25,8 @@ if !exists('g:vscode')
         source $HOME/.config/nvim/plug-config/coc-extensions.vim
         source $HOME/.config/nvim/plug-config/gitgutter.vim
         luafile $HOME/.config/nvim/lua/treesitter-playground.lua
+    else
+        source $HOME/.config/nvim/plug-config/firenvim.vim
     end
 else
     source $HOME/.config/nvim/vscode/settings.vim    

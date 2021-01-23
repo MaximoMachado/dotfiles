@@ -16,3 +16,22 @@ function! OnUIEnter(event) abort
   endif
 endfunction
 autocmd UIEnter * call OnUIEnter(deepcopy(v:event))
+
+" Website File Type
+au BufEnter github.com_*.txt set filetype=markdown
+
+
+let g:firenvim_config = { 
+    \ 'globalSettings': {
+        \ 'alt': 'all',
+    \  },
+    \ 'localSettings': {
+        \ '.*': {
+            \ 'cmdline': 'neovim',
+            \ 'content': 'text',
+            \ 'priority': 0,
+            \ 'selector': 'textarea',
+            \ 'takeover': 'never',
+        \ },
+    \ }
+\ }
