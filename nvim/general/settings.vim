@@ -38,23 +38,15 @@ set incsearch                           " Searches as you type
 set undofile                            " Persistent undos on reboots and file exits
 set formatoptions-=cro                  " Stop newline continuation of comments (Doesn't work)
 
-" Text wraps to stay on screen and breaks in between words
-set wrap
-set linebreak
+set wrap                                " Text wraps to stay on screen
+set linebreak                           " Line breaks on word rather than character
+set ignorecase                          " Case insensitive search when lowercase
+set smartcase                           " Case sensitive search when character is uppercase
+set noerrorbells visualbell t_vb=       " Disable audible bell because it's annoying.
 
-" MISSING SEMESTER RECOMMENDED CONFIG
-" The backspace key has slightly unintuitive behavior by default. For example,
-" by default, you can't backspace before the insertion point set with 'i'.
-" This configuration makes backspace behave more reasonably, in that you can
-" backspace over anything.
-" set backspace=indent,eol,start
 
-" This setting makes search case-insensitive when all characters in the string
-" being searched are lowercase. However, the search becomes case-sensitive if
-" it contains any capital letters. This makes searching more convenient.
-set ignorecase
-set smartcase
-
-" Disable audible bell because it's annoying.
-set noerrorbells visualbell t_vb=
+" Neovim specific features
+if has('nvim')
+    set inccommand=nosplit              " Shows substitution results as you type
+end
 
