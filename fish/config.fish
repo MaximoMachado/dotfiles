@@ -20,9 +20,6 @@ abbr -a mv 'mv -i'
 abbr -a cp 'cp -i'
 abbr -a rm 'rm -I'
 
-# Map vim to neovim
-abbr -a vim nvim
-
 # Searching through the file system
 # Find files in current directory
 abbr -a ff 'fd --type f | fzf'
