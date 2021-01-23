@@ -53,8 +53,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'jiangmiao/auto-pairs'
 
         " Theme
-        " Plug 'joshdick/onedark.vim'
-        Plug 'christianchiarulli/nvcode-color-schemes.vim'
+        Plug 'joshdick/onedark.vim'
         " Icons for Status Bar
         Plug 'kyazdani42/nvim-web-devicons'
         " Status Bar 

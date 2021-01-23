@@ -11,10 +11,8 @@ source $HOME/.config/nvim/plug-config/textobj-user.vim
 
 if !exists('g:vscode')
     " Themes
-    colorscheme palenight
-    " Keep background transparent
-    highlight Normal guibg=NONE ctermbg=NONE
-    " source $HOME/.config/nvim/themes/onedark.vim
+    " Keep background and line numbers transparent
+    source $HOME/.config/nvim/themes/onedark.vim
     luafile $HOME/.config/nvim/lua/galaxyline-config.lua
     " source $HOME/.config/nvim/themes/airline.vim
     
