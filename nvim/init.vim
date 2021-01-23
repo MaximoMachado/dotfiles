@@ -10,22 +10,23 @@ source $HOME/.config/nvim/plug-config/sandwich.vim
 source $HOME/.config/nvim/plug-config/textobj-user.vim
 
 if !exists('g:vscode')
+    source $HOME/.config/nvim/plug-config/firenvim.vim
     " Themes
     " Keep background and line numbers transparent
     source $HOME/.config/nvim/themes/onedark.vim
-    luafile $HOME/.config/nvim/lua/galaxyline-config.lua
-    " source $HOME/.config/nvim/themes/airline.vim
     
     " Plugin Setup
-    " source $HOME/.config/nvim/plug-config/vimspector.vim
     source $HOME/.config/nvim/keys/which-key.vim
     source $HOME/.config/nvim/plug-config/fzf.vim
-    source $HOME/.config/nvim/plug-config/coc.vim
-    source $HOME/.config/nvim/plug-config/coc-extensions.vim
-    source $HOME/.config/nvim/plug-config/gitgutter.vim
     luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-    " source $HOME/.config/nvim/plug-config/sneak.vim
-    luafile $HOME/.config/nvim/lua/treesitter-playground.lua
+
+    if !exists('g:started_by_firenvim')
+        luafile $HOME/.config/nvim/lua/galaxyline-config.lua
+        source $HOME/.config/nvim/plug-config/coc.vim
+        source $HOME/.config/nvim/plug-config/coc-extensions.vim
+        source $HOME/.config/nvim/plug-config/gitgutter.vim
+        luafile $HOME/.config/nvim/lua/treesitter-playground.lua
+    end
 else
     source $HOME/.config/nvim/vscode/settings.vim    
 endif
@@ -36,7 +37,4 @@ luafile $HOME/.config/nvim/lua/treesitter.lua
 " Make sure automatic new-line comments are gone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Better nav for omnicomplete
-" inoremap <expr> <C-k> ("\<C-n>")
-" inoremap <expr> <C-i> ("\<C-p>")
 

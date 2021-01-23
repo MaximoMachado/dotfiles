@@ -53,37 +53,36 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'sheerun/vim-polyglot'
         " Auto pairs for '(' '[' '{'
         Plug 'jiangmiao/auto-pairs'
-
         " Theme
         Plug 'joshdick/onedark.vim'
         " Icons for Status Bar
         Plug 'kyazdani42/nvim-web-devicons'
-        " Status Bar 
-        Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-        " Plug 'vim-airline/vim-airline'
-        " Plug 'vim-airline/vim-airline-themes'
-        " Pretty Tabs
-        Plug 'romgrk/barbar.nvim'
-
-        " COC Stable Version
-        Plug 'neoclide/coc.nvim', { 'branch': 'release' }
         " Smooth Scrolling
         Plug 'psliwka/vim-smoothie'
-        " fzf Installation
-        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-        Plug 'junegunn/fzf.vim'
-        " Changes current directory to project directory for better searching
-        Plug 'airblade/vim-rooter'
-        " Git integration
-        Plug 'airblade/vim-gitgutter'
-        " Don't use these, maybe another time
-        " Plug 'tpope/vim-fugitive'
-        " Plug 'junegunn/gv.vim'
         " New Motions/Motion Addons
-        " Plug 'justinmk/vim-sneak'
         Plug 'easymotion/vim-easymotion'
         " Lua Scripts
         Plug 'norcalli/nvim-colorizer.lua'
+
+        if !exists('g:started_by_firenvim')
+            " Status Bar 
+            Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+            " Plug 'vim-airline/vim-airline'
+            " Plug 'vim-airline/vim-airline-themes'
+            " Pretty Tabs
+            Plug 'romgrk/barbar.nvim'
+
+            " COC Stable Version
+            Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
+            " fzf Installation
+            Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+            Plug 'junegunn/fzf.vim'
+            " Changes current directory to project directory for better searching
+            Plug 'airblade/vim-rooter'
+            " Git integration
+            Plug 'airblade/vim-gitgutter'
+        end
     endif
 call plug#end()
 
