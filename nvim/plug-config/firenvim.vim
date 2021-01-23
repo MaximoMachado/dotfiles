@@ -11,6 +11,7 @@ function! OnUIEnter(event) abort
   if s:IsFirenvimActive(a:event)
     set secure
     set background=light
+    colorscheme onedark
     set laststatus=0
     set columns=80
     set lines=25
@@ -20,6 +21,7 @@ autocmd UIEnter * call OnUIEnter(deepcopy(v:event))
 
 " Website File Type
 au BufEnter github.com_*.txt set filetype=markdown
+au BufEnter overleaf.com_*.txt set filetype=tex
 
 
 let g:firenvim_config = { 

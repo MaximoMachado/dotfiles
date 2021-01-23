@@ -11,7 +11,6 @@ source $HOME/.config/nvim/plug-config/textobj-user.vim
 
 if !exists('g:vscode')
     " Themes
-    " Keep background and line numbers transparent
     source $HOME/.config/nvim/themes/onedark.vim
     
     " Plugin Setup
