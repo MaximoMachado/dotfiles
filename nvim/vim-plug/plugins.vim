@@ -53,13 +53,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'jiangmiao/auto-pairs'
 
         " Theme
-        Plug 'joshdick/onedark.vim'
+        " Plug 'joshdick/onedark.vim'
+        Plug 'christianchiarulli/nvcode-color-schemes.vim'
         " Icons for Status Bar
         Plug 'kyazdani42/nvim-web-devicons'
         " Status Bar 
         Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
         " Plug 'vim-airline/vim-airline'
         " Plug 'vim-airline/vim-airline-themes'
+        " Pretty Tabs
+        Plug 'romgrk/barbar.nvim'
 
         " COC Stable Version
         Plug 'neoclide/coc.nvim', { 'branch': 'release' }
