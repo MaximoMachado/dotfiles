@@ -15,14 +15,16 @@ function! OnUIEnter(event) abort
     set laststatus=0
     set columns=80
     set lines=25
+    " Full screen and Minimize
+    nnoremap <leader>= :set lines=500 columns=500<CR>
+    nnoremap <leader>_ :set lines=25 columns=80<CR>
   endif
 endfunction
 autocmd UIEnter * call OnUIEnter(deepcopy(v:event))
 
 " Website File Type
 au BufEnter github.com_*.txt set filetype=markdown
-au BufEnter overleaf.com_*.txt set filetype=tex
-
+au BufEnter *overleaf.com_*.txt set syntax=tex
 
 let g:firenvim_config = { 
     \ 'globalSettings': {
