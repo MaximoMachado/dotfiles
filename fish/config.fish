@@ -17,7 +17,8 @@ alias fd fdfind
 abbr -a la 'ls -lA --group-directories-first'
 # Map to interactive versions
 abbr -a mv 'mv -i'
-abbr -a rm 'rm -i'
+abbr -a cp 'cp -i'
+abbr -a rm 'rm -I'
 
 # Map vim to neovim
 abbr -a vim nvim
