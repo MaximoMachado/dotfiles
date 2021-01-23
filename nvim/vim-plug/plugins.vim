@@ -55,7 +55,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Theme
         Plug 'joshdick/onedark.vim'
         " Icons for Status Bar
-        " Plug 'kyazdani42/nvim-web-devicons'
+        Plug 'kyazdani42/nvim-web-devicons'
         " Status Bar 
         Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
         " Plug 'vim-airline/vim-airline'
