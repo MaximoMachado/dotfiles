@@ -12,7 +12,7 @@ function! OnUIEnter(event) abort
     set background=light
     set laststatus=0
     set columns=80
-    set lines=50
+    set lines=25
   endif
 endfunction
 autocmd UIEnter * call OnUIEnter(deepcopy(v:event))
