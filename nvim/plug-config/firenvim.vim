@@ -11,7 +11,7 @@ function! OnUIEnter(event) abort
   if s:IsFirenvimActive(a:event)
     set background=light
     set laststatus=0
-    set columns=100
+    set columns=80
     set lines=50
   endif
 endfunction
