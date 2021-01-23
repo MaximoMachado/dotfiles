@@ -9,6 +9,7 @@ endfunction
 
 function! OnUIEnter(event) abort
   if s:IsFirenvimActive(a:event)
+    set secure
     set background=light
     set laststatus=0
     set columns=80
