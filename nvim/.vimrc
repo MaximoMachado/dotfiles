@@ -46,8 +46,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Theme
     Plug 'joshdick/onedark.vim'
-    " Status Bar 
-    Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
     " Smooth Scrolling
     Plug 'psliwka/vim-smoothie'
@@ -64,7 +62,6 @@ call plug#end()
 " Sourcing neovim config files
 
 " General Settings
-source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
@@ -87,3 +84,8 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 " Make sure automatic new-line comments are gone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" Overwriting Neovim Settings
+set nobackup
+set nowritebackup
+set notermguicolors
+set showmode
