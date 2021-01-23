@@ -10,6 +10,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Install Nerd Font
 mkdir -p ~/.local/share/fonts/nerd-fonts/jetbrains-mono
 cd ~/.local/share/fonts/nerd-fonts/jetbrains-mono && curl -fLo 'JetBrainsMono.zip' https://download.jetbrains.com/fonts/JetBrainsMono-2.221.zip && unzip 'JetBrainsMono.zip' && rm -f 'JetBrainsMono.zip'
+fc-cache -f -v
 
 echo 'Run :PlugInstall in nvim to install plugins.'
 echo 'Install clangd in your preferred package manager to use the corresponding COC extension.'
