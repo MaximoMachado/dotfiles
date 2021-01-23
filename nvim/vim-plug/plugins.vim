@@ -41,6 +41,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'
     else
+        " Neovim in the Browser
+        Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
         " View Treesitter Information
         Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
         " Commenting
