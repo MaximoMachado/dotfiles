@@ -26,7 +26,11 @@ abbr -a ff 'fd --type f | fzf'
 # Find directories in current directory
 abbr -a fdir 'fd --type d | fzf'
 # Find files and directories in home directory
-abbr -a fcd 'cd (fd --type d . ~ | fzf --preview="tree -CL 2 {}" || echo "./") && tree -CL 1'
+abbr -a fcd 'cd (fd --type d . ~ | fzf --preview="tree -CL 2 {}" || echo "./")'
+# Find hidden files as well
+abbr -a fhcd 'cd (fd -H --type d . ~ | fzf --preview="tree -CL 2 {}" || echo "./")'
+# Search apt packages and install one
+abbr -a fapt 'sudo apt install (apt list | fzf -m --preview="apt info {}")'
 
 # Common directory shortcuts
 # Go to college directory
