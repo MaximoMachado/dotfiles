@@ -26,7 +26,7 @@ abbr -a ff 'fd --type f | fzf'
 # Find directories in current directory
 abbr -a fdir 'fd --type d | fzf'
 # Find files and directories in home directory
-abbr -a fh 'fd . ~ | fzf'
+abbr -a fcd 'cd (fd --type d . ~ | fzf --preview="tree -CL 2 {}" || echo "./") && tree -CL 1'
 
 # Common directory shortcuts
 # Go to college directory
