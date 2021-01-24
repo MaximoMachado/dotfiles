@@ -7,6 +7,10 @@ nmap gc  <Plug>VSCodeCommentary
 omap gc  <Plug>VSCodeCommentary
 nmap gcc <Plug>VSCodeCommentaryLine
 
+" Mimic gitgutter's next hunk feature
+nnoremap ]c <Cmd>call VSCodeNotify('workbench.action.editor.nextChange')<CR>
+nnoremap [c <Cmd>call VSCodeNotify('workbench.action.editor.previousChange')<CR>
+
 " Rename symbol
 nnoremap gr :call VSCodeNotify('editor.action.rename')<CR>
 
