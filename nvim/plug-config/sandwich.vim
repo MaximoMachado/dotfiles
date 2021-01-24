@@ -31,8 +31,8 @@ omap aqq <Plug>(textobj-sandwich-auto-a)
 if exists('g:vscode')
 
     " Buns is if minimal highlighting option is selected
-    highlight OperatorSandwichBuns guifg='#edc41f' gui=underline ctermfg=172 cterm=underline 
+    highlight OperatorSandwichBuns guifg='#aa91a0' gui=underline ctermfg=172 cterm=underline 
     highlight OperatorSandwichChange guifg='#edc41f' gui=underline ctermfg='yellow' cterm=underline
-    highlight OperatorSandwichAdd guifg='#b1fa87' gui=underline ctermfg='green' cterm=underline
-    highlight OperatorSandwichDelete guifg='#000000' guibg='#cf5963' gui=none ctermbg='red' cterm=underline
+    highlight OperatorSandwichAdd guibg='#b1fa87' gui=none ctermbg='green' cterm=none
+    highlight OperatorSandwichDelete guibg='#cf5963' gui=none ctermbg='red' cterm=none
 endif
