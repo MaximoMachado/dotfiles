@@ -33,8 +33,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kana/vim-textobj-line'
     " Entire File (ie ae)
     Plug 'kana/vim-textobj-entire'
-    " Comments (ia aa aA) (Remapped in config)
-    Plug 'glts/vim-textobj-comment'
     " Vertical Column
     Plug 'idbrii/textobj-word-column.vim'
 
