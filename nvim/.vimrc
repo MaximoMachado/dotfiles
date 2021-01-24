@@ -3,7 +3,6 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
     !curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
@@ -85,7 +84,11 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Overwriting Neovim Settings
-set nobackup
-set nowritebackup
+" Prevent vim from litering file system with backup files
+set backupdir=$HOME/.vim/backup/
+" Prevent vim from litering file system with undo tracking files
+set undodir=$HOME/.vim/undo/
+" Vim doesn't play nicely with true color support
 set notermguicolors
+" No longer have status bar from neovim
 set showmode

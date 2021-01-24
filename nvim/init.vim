@@ -34,6 +34,7 @@ endif
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
 luafile $HOME/.config/nvim/lua/treesitter.lua
+
 " Make sure automatic new-line comments are gone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
