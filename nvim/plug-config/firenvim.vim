@@ -13,6 +13,7 @@ function! OnUIEnter(event) abort
     set background=light
     colorscheme onedark
     set laststatus=0
+    set showmode
     set columns=80
     set lines=25
     " Full screen and Minimize
