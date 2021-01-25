@@ -19,13 +19,30 @@ function! OnUIEnter(event) abort
     " Full screen and Minimize
     nnoremap <leader>= :set lines=500 columns=500<CR>
     nnoremap <leader>_ :set lines=25 columns=80<CR>
-  endif
+
+    " Website File Type
+    let l:bufname=expand('%:t')
+        if l:bufname =~? 'github.com'
+            set filetype=markdown
+        elseif l:bufname =~? 'w.overleaf.com'
+            set filetype=latex
+            set syntax=tex
+        elseif l:bufname =~? 'cocalc.com' || l:bufname =~? 'kaggleusercontent.com'
+            set filetype=python
+        elseif l:bufname =~? 'localhost'
+            " Jupyter notebooks don't have any more specific buffer information. If you
+            " use some other locally hosted app you want editing function in, set it here.
+            set filetype=python
+        elseif l:bufname =~? 'reddit.com'
+            set filetype=markdown
+        elseif l:bufname =~? 'stackexchange.com' || l:bufname =~? 'stackoverflow.com'
+            set filetype=markdown
+        elseif l:bufname =~? 'slack.com' || l:bufname =~? 'gitter.com'
+            set filetype=markdown
+        endif
+    endif
 endfunction
 autocmd UIEnter * call OnUIEnter(deepcopy(v:event))
-
-" Website File Type
-au BufEnter github.com_*.txt set filetype=markdown
-au BufEnter *overleaf.com_*.txt set syntax=tex
 
 let g:firenvim_config = { 
     \ 'globalSettings': {
