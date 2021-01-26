@@ -1,5 +1,5 @@
 " -- Comment Text Object --
-let g:textobj_comment_no_default_key_mappings = 1
+" let g:textobj_comment_no_default_key_mappings = 1
 
 " -- Column Text Object --
 let g:textobj_wordcolumn_no_default_key_mappings = 1

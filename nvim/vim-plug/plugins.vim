@@ -26,7 +26,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Custom Text Objects Framework
     Plug 'kana/vim-textobj-user'
     " Function Arguments (i, a,)
-    Plug 'sgur/vim-textobj-parameter'
+    " Plug 'sgur/vim-textobj-parameter'
     " Variable Segments for camel and snake case (iv av)
     Plug 'Julian/vim-textobj-variable-segment'
     " Current line (il al)
