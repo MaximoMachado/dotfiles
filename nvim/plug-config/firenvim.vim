@@ -35,6 +35,8 @@ function! OnUIEnter(event) abort
             set filetype=python
         elseif l:bufname =~? 'reddit.com'
             set filetype=markdown
+        elseif l:bufname =~? 'piazza.com'
+            set filetype=markdown
         elseif l:bufname =~? 'stackexchange.com' || l:bufname =~? 'stackoverflow.com'
             set filetype=markdown
         elseif l:bufname =~? 'slack.com' || l:bufname =~? 'gitter.com'
