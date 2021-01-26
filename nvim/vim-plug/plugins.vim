@@ -67,8 +67,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
             Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
             " Plug 'vim-airline/vim-airline'
             " Plug 'vim-airline/vim-airline-themes'
-            " Pretty Tabs
-            Plug 'romgrk/barbar.nvim'
 
             " COC Stable Version
             Plug 'neoclide/coc.nvim', { 'branch': 'release' }
