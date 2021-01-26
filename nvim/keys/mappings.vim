@@ -5,6 +5,7 @@
 " Normal + - goes down a line but cursor is on first non-whitespace character
 " Normal _ - goes down (count - 1) lines (can just use <CR> with a count one less)
 " Normal S - redundant with functionality of 'cc'
+" Normal R - replaces characters but only really useful if word entering is the same length
 
 let g:mapleader=" "
 " Prevent cursor moving over by one
