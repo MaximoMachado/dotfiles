@@ -7,6 +7,9 @@ set -gx EDITOR nvim
 # Set default node version for every shell
 set -U nvm_default_version v14.15.4
 
+# Set manpager to neovim
+set -x MANPAGER 'nvim +Man!'
+
 # Alias
 # Use fd like documentation
 alias fd fdfind
