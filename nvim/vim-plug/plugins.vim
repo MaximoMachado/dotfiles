@@ -22,6 +22,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Allows easy changing of surrounding chars
     Plug 'machakann/vim-sandwich'
+    " Support for Latex Text-Objs and other keybinds
+    Plug 'lervag/vimtex'
 
     " Custom Text Objects Framework
     Plug 'kana/vim-textobj-user'
