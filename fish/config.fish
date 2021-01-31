@@ -7,6 +7,10 @@ set -gx EDITOR nvim
 # Set default node version for every shell
 set -U nvm_default_version v14.15.4
 
+# Add deno to path
+set -x DENO_INSTALL /home/maximo/.deno
+set -x PATH $DENO_INSTALL/bin:$PATH
+
 # Set manpager to neovim
 set -x MANPAGER 'nvim +Man!'
 
@@ -58,3 +62,4 @@ abbr -a gits git status
 eval /home/maximo/miniconda2/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
+alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"
