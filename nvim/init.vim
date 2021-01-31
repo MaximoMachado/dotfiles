@@ -23,6 +23,7 @@ if !exists('g:vscode')
         source $HOME/.config/nvim/plug-config/coc.vim
         source $HOME/.config/nvim/plug-config/coc-extensions.vim
         source $HOME/.config/nvim/plug-config/gitgutter.vim
+        source $HOME/.config/nvim/plug-config/tmux-navigator.vim
         luafile $HOME/.config/nvim/lua/treesitter.lua
         luafile $HOME/.config/nvim/lua/treesitter-playground.lua
     else

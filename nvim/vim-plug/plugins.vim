@@ -73,6 +73,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
             " COC Stable Version
             Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
+            " Seamless integration with Tmux
+            Plug 'christoomey/vim-tmux-navigator'
+
             " fzf Installation
             Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
             Plug 'junegunn/fzf.vim'

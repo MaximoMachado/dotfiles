@@ -48,12 +48,6 @@ else
     nnoremap <leader><bar> :vsplit<CR>
     nnoremap <leader>- :split<CR>
 
-    " Window navigation to hjkl
-    nnoremap <leader>k <C-w>k
-    nnoremap <leader>h <C-w>h
-    nnoremap <leader>j <C-w>j
-    nnoremap <leader>l <C-w>l
-
     " jj to escape
     inoremap jj <Esc>
 

@@ -21,11 +21,6 @@ let g:which_key_sep = '→'
 let g:which_key_map['|'] = 'Split Vertically'
 let g:which_key_map['-'] = 'Split Horizontally'
 
-let g:which_key_map['h'] = 'Left Window'
-let g:which_key_map['j'] = 'Bottom Window'
-let g:which_key_map['k'] = 'Top Window'
-let g:which_key_map['l'] = 'Right Window'
-
 let g:which_key_map['p'] = 'Paste Yanked After'
 let g:which_key_map['P'] = 'Paste Yanked Before'
 
@@ -72,8 +67,8 @@ let g:which_key_map['a'] = 'Code Actions'
 let g:which_key_map['ac'] = 'Code Actions on Buffer'
 let g:which_key_map['f'] = 'Quick Fix'
 
-let g:which_key_map[','] = 'Swap Argument Left'
-let g:which_key_map['<'] = 'Swap Argument Right'
+let g:which_key_map['<'] = 'Swap Argument Left'
+let g:which_key_map['>'] = 'Swap Argument Right'
 
 let g:which_key_map.s = {
       \ 'name' : '+ Search' ,
