@@ -45,7 +45,7 @@ let g:which_key_map['t'] = {
       \ 'q' : ['', 'Query Character'],
       \ 'qq' : ['', 'Auto Query'],
       \ 'v' : ['', 'Variable Name Segment'],
-      \ 'l' : {
+      \ 'L' : {
           \     'name' : '+ List LaTeX Objects',
           \     'c'   : ['', 'Command'],
           \     'd'   : ['', 'Delimiter'],
@@ -87,8 +87,8 @@ let g:which_key_map.s = {
 " Git-Gutter Keys
 let g:which_key_map.g = {
       \ 'name' : '+ Git' ,
-      \ 'hs' : ['<Plug>(GitGutterStageHunk)'      , 'Stage Hunk'],
-      \ 'hu' : ['<Plug>(GitGutterUndoHunk)'      , 'Undo Hunk'],
-      \ 'hp' : ['<Plug>(GitGutterPreviewHunk)'      , 'Preview Hunk'],
+      \ 's' : ['<Plug>(GitGutterStageHunk)'      , 'Stage Hunk'],
+      \ 'u' : ['<Plug>(GitGutterUndoHunk)'      , 'Undo Hunk'],
+      \ 'p' : ['<Plug>(GitGutterPreviewHunk)'      , 'Preview Hunk'],
       \ }
 
