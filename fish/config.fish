@@ -50,7 +50,7 @@ abbr -a cdcn 'cd ~/.config/nvim'
 abbr -a cdcf 'cd ~/.config/fish'
 
 # Nvim Add current directory to plugin runtime path
-abbr -a nvimd 'nvim --cmd "set rtp+=$PWD"'
+abbr -a nvimd 'nvim --cmd "set rtp+=$PWD" --cmd "let g:vimperfect_dev = 1"'
 
 # Git Abbreviations
 abbr -a gitco git checkout
