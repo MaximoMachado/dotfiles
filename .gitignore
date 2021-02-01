@@ -10,6 +10,7 @@
 !/fusuma/
 !/joplin/
 !/cava/
+!/.ssh
 
 # Files to include
 !.gitignore
