@@ -6,7 +6,7 @@
     "explorer.previewAction.onHover": false,
     "explorer.keyMappings.global": {
       "<cr>": ["expandable?", "expand", "open"],
-      "<bar>": "open:vsplit"
+      "<bar>": "open:vsplit",
       "-": "open:split"
     }
 }
