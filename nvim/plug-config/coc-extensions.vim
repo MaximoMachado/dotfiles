@@ -4,5 +4,7 @@ let g:coc_global_extensions = [
     \ 'coc-explorer',
     \ 'coc-pyright',
     \ 'coc-clangd',
+    \ 'coc-lua',
+    \ 'coc-marketplace',
     \ ]
     " \ 'coc-vimtex',
