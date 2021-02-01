@@ -49,6 +49,9 @@ abbr -a cdcn 'cd ~/.config/nvim'
 # Fish config
 abbr -a cdcf 'cd ~/.config/fish'
 
+# Nvim Add current directory to plugin runtime path
+abbr -a nvimd 'nvim --cmd "set rtp+=$PWD"'
+
 # Git Abbreviations
 abbr -a gitco git checkout
 abbr -a gitcoma 'git add -A && git commit -m'
