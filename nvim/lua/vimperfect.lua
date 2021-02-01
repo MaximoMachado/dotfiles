@@ -1,1 +1,0 @@
-/home/maximo/dev/personal-projects/vimperfect/vimperfect/lua/vimperfect.lua
