@@ -62,7 +62,7 @@ abbr -a gits git status
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /home/maximo/miniconda2/bin/conda "shell.fish" "hook" $argv | source
+eval /home/maximo/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
 alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"
