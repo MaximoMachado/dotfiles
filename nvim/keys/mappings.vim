@@ -51,11 +51,11 @@ else
     " jj to escape
     inoremap jj <Esc>
 
-    " Use Ctrl + Arrow keys to resize windows
-    nnoremap <silent> <C-Up>      :resize -2<CR>
-    nnoremap <silent> <C-Down>    :resize +2<CR>
-    nnoremap <silent> <C-Left>    :vertical resize -2<CR>
-    nnoremap <silent> <C-Right>   :vertical resize +2<CR>
+    " Use Alt + Arrow keys to resize windows
+    nnoremap <silent> <M-Up>      :resize -2<CR>
+    nnoremap <silent> <M-Down>    :resize +2<CR>
+    nnoremap <silent> <M-Left>    :vertical resize +2<CR>
+    nnoremap <silent> <M-Right>   :vertical resize -2<CR>
 
     " TAB in general mode will move to text buffer
     nnoremap <silent> <TAB> :bnext<CR>
