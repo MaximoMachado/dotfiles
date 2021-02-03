@@ -7,6 +7,11 @@
 " Normal S - redundant with functionality of 'cc'
 " Normal R - replaces characters but only really useful if word entering is the same length
 
+" ~ can become a new operator if below setting is turned on.
+" Should be used with custom operator as default semi-redundant w/ gu and gU
+" Default is to switch case of letters ex. eGG -> Egg
+set tidleop
+
 let g:mapleader=" "
 " Prevent cursor moving over by one
 nnoremap <Space> <Nop>
