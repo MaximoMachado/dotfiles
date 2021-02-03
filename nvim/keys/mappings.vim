@@ -10,7 +10,7 @@
 " ~ can become a new operator if below setting is turned on.
 " Should be used with custom operator as default semi-redundant w/ gu and gU
 " Default is to switch case of letters ex. eGG -> Egg
-set tidleop
+set tildeop
 
 let g:mapleader=" "
 " Prevent cursor moving over by one
