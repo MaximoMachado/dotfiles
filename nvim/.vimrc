@@ -29,8 +29,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kana/vim-textobj-line'
     " Entire File (ie ae)
     Plug 'kana/vim-textobj-entire'
-    " Comments (ia aa aA) (Remapped in config)
-    Plug 'glts/vim-textobj-comment'
     " Vertical Column
     Plug 'idbrii/textobj-word-column.vim'
 
@@ -45,6 +43,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Theme
     Plug 'joshdick/onedark.vim'
+
+    " Seamless integration with Tmux
+    Plug 'christoomey/vim-tmux-navigator'
 
     " Smooth Scrolling
     Plug 'psliwka/vim-smoothie'
@@ -77,6 +78,7 @@ source $HOME/.config/nvim/themes/onedark.vim
 source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/gitgutter.vim
+source $HOME/.config/nvim/plug-config/tmux-navigator.vim
 
 source $HOME/.config/nvim/plug-config/quickscope.vim
 
