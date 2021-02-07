@@ -40,10 +40,13 @@ local mode_color = function()
         [''] = colors.purple,
         v = colors.purple,
         R = colors.red1,
-        t = colors.blue
+        t = colors.blue,
+        -- LibModal Modes
+        TABS = colors.blue,
     }
-
-    if mode_colors[vim.fn.mode()] ~= nil then
+    if vim.g.libmodalActiveModeName then
+        return mode_colors[vim.g.libmodalActiveModeName]
+    elseif mode_colors[vim.fn.mode()] ~= nil then
         return mode_colors[vim.fn.mode()]
     else
         print(vim.fn.mode())
@@ -84,7 +87,10 @@ gls.left[1] = {
                 S = 'S-LINE',
             }
             vim.api.nvim_command('hi GalaxyViMode guibg=' .. mode_color())
-            if alias[vim.fn.mode()] ~= nil then
+
+            if vim.g.libmodalActiveModeName then
+                return '  ' .. vim.g.libmodalActiveModeName .. ' '
+            elseif alias[vim.fn.mode()] ~= nil then
                 return '  ' .. alias[vim.fn.mode()] .. ' '
             else
                 return '  V-BLOCK '
