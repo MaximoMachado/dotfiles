@@ -66,8 +66,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
         " Custom Modes Framework
         Plug 'Iron-E/nvim-libmodal'
-        " Tab Management Mode (<leader><tab>)
-        Plug 'Iron-E/nvim-tabmode'
 
         if !exists('g:started_by_firenvim')
             " Status Bar 

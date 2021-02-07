@@ -27,6 +27,9 @@ if !exists('g:vscode')
     source $HOME/.config/nvim/plug-config/fzf.vim
     luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
+    source $HOME/.config/nvim/plug-config/libmodal.vim
+    luafile $HOME/.config/nvim/lua/modes/tabmode.lua
+
     if !exists('g:started_by_firenvim')
         luafile $HOME/.config/nvim/lua/galaxyline-config.lua
         source $HOME/.config/nvim/plug-config/coc.vim
