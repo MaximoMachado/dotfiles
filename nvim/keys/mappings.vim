@@ -22,6 +22,9 @@ nnoremap Q <Nop>
 " Map capital Y to behave more like D and C
 nnoremap Y y$
 
+" Map previous jump to another key to avoid Ctrl-I being the same as TAB
+nnoremap <C-l> <C-i>
+
 " BETTER TABBING (Stays in visual mode after tabbing)
 xnoremap < <gv
 xnoremap > >gv
