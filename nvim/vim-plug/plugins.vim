@@ -64,6 +64,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Lua Scripts
         Plug 'norcalli/nvim-colorizer.lua'
 
+        " Custom Modes Framework
+        Plug 'Iron-E/nvim-libmodal'
+        " Tab Management Mode (<leader><tab>)
+        Plug 'Iron-E/nvim-tabmode'
+
         if !exists('g:started_by_firenvim')
             " Status Bar 
             Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}

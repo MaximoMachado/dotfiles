@@ -18,6 +18,8 @@ let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
 
+let g:which_key_map['<Tab>'] = 'Enter Tab Mode'
+
 let g:which_key_map['|'] = 'Split Vertically'
 let g:which_key_map['-'] = 'Split Horizontally'
 
