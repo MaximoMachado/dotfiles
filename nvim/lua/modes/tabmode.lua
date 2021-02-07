@@ -20,6 +20,11 @@ local function _cmd_wrap(command)
 	return function() cmd(command) end
 end
 
+-- Turn some special character value into a character code.
+local function _to_char(val)
+	return eval('"\\'..val..'"')
+end
+
 -- the key combos for this mode.
 local _combos = {
 	['$'] = _cmd_wrap('tablast'),
@@ -34,6 +39,8 @@ local _combos = {
 	['d'] = _cmd_wrap('tabclose'),
 	['i'] = _cmd_wrap('-tabnew'),
 	['I'] = _cmd_wrap('0tabnew'),
+	['-'] = _cmd_wrap('split'),
+	[_to_char('<bar>')] = _cmd_wrap('vsplit'),
 	['s'] = function()
 		fn('execute', {{'tabnew', 'tabprevious', 'tabclose'}})
 	end,
@@ -48,11 +55,6 @@ local _combos = {
 -- create a `new` link for some `existing` mapping
 local function _combo_link(new, existing)
 	_combos[new] = _combos[existing]
-end
-
--- Turn some special character value into a character code.
-local function _to_char(val)
-	return eval('"\\'..val..'"')
 end
 
 -- Synonyms for '0'
