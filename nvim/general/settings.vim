@@ -25,7 +25,7 @@ set number                              " Line numbers
 set relativenumber                      " Relative to current line
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
-set showtabline=0                       " Hides tabline
+set showtabline=1                       " Hides tabline when only 1 tab
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
