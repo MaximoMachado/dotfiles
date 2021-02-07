@@ -28,7 +28,7 @@ let g:which_key_map['o'] = 'Append New Line'
 let g:which_key_map['O'] = 'Prepend New Line'
 
 " See available text objects (Need to update manually)
-let g:which_key_map['t'] = {
+let g:which_key_map['+'] = {
       \ 'name' : '+ List Text Objects' ,
       \ ',' : ['', 'Function Parameter'],
       \ 'f' : ['', 'Function'],
