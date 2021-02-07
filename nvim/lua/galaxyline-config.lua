@@ -12,10 +12,12 @@ local colors = {
     blue = '#61afef',
     green = '#98c379',
     purple = '#c678dd',
+    purple2 = '#8791FF',
     orange = '#e5c07b',
     red1 = '#e06c75',
     red2 = '#be5046',
     yellow = '#e5c07b',
+    yellow2 = '#e5c616',
     gray1 = '#5c6370',
     gray2 = '#2c323d',
     gray3 = '#3e4452',
@@ -35,14 +37,14 @@ local mode_color = function()
     local mode_colors = {
         n = colors.green,
         i = colors.blue,
-        c = colors.green,
+        c = colors.yellow2,
         V = colors.purple,
         [''] = colors.purple,
         v = colors.purple,
         R = colors.red1,
         t = colors.blue,
         -- LibModal Modes
-        TABS = colors.blue,
+        TABS = colors.purple2,
     }
     if vim.g.libmodalActiveModeName then
         return mode_colors[vim.g.libmodalActiveModeName]
