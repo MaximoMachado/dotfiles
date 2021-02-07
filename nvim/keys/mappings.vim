@@ -22,9 +22,6 @@ nnoremap Q <Nop>
 " Map capital Y to behave more like D and C
 nnoremap Y y$
 
-" Map previous jump to another key to avoid Ctrl-I being the same as TAB
-nnoremap <C-l> <C-i>
-
 " BETTER TABBING (Stays in visual mode after tabbing)
 xnoremap < <gv
 xnoremap > >gv
@@ -47,11 +44,7 @@ nnoremap <expr> <C-k> ':.,.' . v:count . 'm-2<CR>=='
 vnoremap <silent> <C-j> :m '>+1<CR>gv=gv
 vnoremap <silent> <C-k> :m '<-2<CR>gv=gv
 
-if exists('g:vscode')
-    " Simulate same TAB behavior in VSCode
-    nmap <Tab> :Tabnext<CR>
-    nmap <S-Tab> :Tabprev<CR>
-else
+if !exists('g:vscode')
     " Easy splits
     nnoremap <leader><bar> :vsplit<CR>
     nnoremap <leader>- :split<CR>
@@ -66,8 +59,8 @@ else
     nnoremap <silent> <M-Right>   :vertical resize -2<CR>
 
     " TAB in general mode will move to text buffer
-    nnoremap <silent> <TAB> :bnext<CR>
+    nnoremap <silent> gb :bnext<CR>
     " SHIFT-TAB will go back
-    nnoremap <silent> <S-TAB> :bprevious<CR>
+    nnoremap <silent> gB :bprevious<CR>
 
 endif
