@@ -102,6 +102,16 @@ _combo_link(_to_char('<S-PageDown>'), 'W')
 	 */
 --]]
 
+
 return function()
-	require('libmodal').mode.enter('TABS', _combos)
+    local libmodal = require('libmodal')
+    local tabMode = libmodal.Mode.new('TABS', _combos)
+    local HighlightSegment = libmodal.Indicator.HighlightSegment
+
+    if vim.api.nvim_get_option('showmode') == false then
+        tabMode.indicator = {
+            HighlightSegment.new('None', '')
+        }
+    end
+	tabMode:enter()
 end
