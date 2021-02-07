@@ -1,3 +1,9 @@
+" TODO Use the custom mode plugin to create a buffer navigation/management mode
+" Can use - (window is 2D) or capital S (switch mode) to enter mode
+" In that mode, Tab/Shift Tab go to next/prev buffer
+" Movement keys change which split you are in (Currently use Alt+hjkl for it)
+" (count)G goes to that number buffer
+
 " General Settings
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
