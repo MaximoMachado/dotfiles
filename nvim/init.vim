@@ -3,6 +3,9 @@
 " In that mode, Tab/Shift Tab go to next/prev buffer
 " Movement keys change which split you are in (Currently use Alt+hjkl for it)
 " (count)G goes to that number buffer
+" - and | for horizontal/vertical splits
+" (count)d to delete that number buffer or dd to delete current buffer
+" y and p could be used to move a buffer from one split to another
 
 " General Settings
 source $HOME/.config/nvim/vim-plug/plugins.vim
