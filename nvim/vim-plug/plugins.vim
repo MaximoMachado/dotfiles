@@ -38,6 +38,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vertical Column
     Plug 'idbrii/textobj-word-column.vim'
 
+    " Arduino IDE Integration
+    Plug 'stevearc/vim-arduino'
+
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'
     else
