@@ -27,6 +27,9 @@ function! OnUIEnter(event) abort
         elseif l:bufname =~? 'w.overleaf.com'
             set filetype=latex
             set syntax=tex
+        elseif l:bufname =~? 'www.gradescope.com'
+            set filetype=latex
+            set syntax=tex
         elseif l:bufname =~? 'cocalc.com' || l:bufname =~? 'kaggleusercontent.com'
             set filetype=python
         elseif l:bufname =~? 'localhost'
