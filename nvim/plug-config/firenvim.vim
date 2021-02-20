@@ -27,12 +27,11 @@ function! OnUIEnter(event) abort
         elseif l:bufname =~? 'w.overleaf.com'
             set filetype=latex
             set syntax=tex
-        elseif l:bufname =~? 'www.gradescope.com'
+        elseif l:bufname =~? 'gradescope.com'
             set filetype=latex
-            set syntax=tex
         elseif l:bufname =~? 'cocalc.com' || l:bufname =~? 'kaggleusercontent.com'
             set filetype=python
-        elseif l:bufname =~? 'localhost'
+        elseif l:bufname =~? 'localhost' || l:bufname =~? 'colab.research.google.com'
             " Jupyter notebooks don't have any more specific buffer information. If you
             " use some other locally hosted app you want editing function in, set it here.
             set filetype=python
