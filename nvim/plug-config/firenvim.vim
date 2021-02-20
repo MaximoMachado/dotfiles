@@ -25,10 +25,9 @@ function! OnUIEnter(event) abort
         if l:bufname =~? 'github.com'
             set filetype=markdown
         elseif l:bufname =~? 'w.overleaf.com'
-            set filetype=latex
-            set syntax=tex
+            set filetype=tex
         elseif l:bufname =~? 'gradescope.com'
-            set filetype=latex
+            set filetype=tex
         elseif l:bufname =~? 'cocalc.com' || l:bufname =~? 'kaggleusercontent.com'
             set filetype=python
         elseif l:bufname =~? 'localhost' || l:bufname =~? 'colab.research.google.com'
