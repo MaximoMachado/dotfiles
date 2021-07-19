@@ -5,7 +5,7 @@ set fish_greeting
 set -gx EDITOR nvim
 
 # Set default node version for every shell
-set -U nvm_default_version v14.15.4
+set -U nvm_default_version lts
 
 # Add deno to path
 set -x DENO_INSTALL /home/maximo/.deno
