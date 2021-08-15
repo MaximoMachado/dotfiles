@@ -64,10 +64,10 @@ let g:which_key_map['+'] = {
       \ }
 
 " Plugins
-let g:which_key_map['e'] = 'Explorer'
-let g:which_key_map['a'] = 'Code Actions'
-let g:which_key_map['ac'] = 'Code Actions on Buffer'
-let g:which_key_map['f'] = 'Quick Fix'
+" let g:which_key_map['e'] = 'Explorer'
+" let g:which_key_map['a'] = 'Code Actions'
+" let g:which_key_map['ac'] = 'Code Actions on Buffer'
+" let g:which_key_map['f'] = 'Quick Fix'
 
 let g:which_key_map['<'] = 'Swap Argument Left'
 let g:which_key_map['>'] = 'Swap Argument Right'
@@ -82,10 +82,10 @@ let g:which_key_map.s = {
       \ }
 
 " Git-Gutter Keys
-let g:which_key_map.g = {
-      \ 'name' : '+ Git' ,
-      \ 's' : ['<Plug>(GitGutterStageHunk)'      , 'Stage Hunk'],
-      \ 'u' : ['<Plug>(GitGutterUndoHunk)'      , 'Undo Hunk'],
-      \ 'p' : ['<Plug>(GitGutterPreviewHunk)'      , 'Preview Hunk'],
-      \ }
+" let g:which_key_map.g = {
+"       \ 'name' : '+ Git' ,
+"       \ 's' : ['<Plug>(GitGutterStageHunk)'      , 'Stage Hunk'],
+"       \ 'u' : ['<Plug>(GitGutterUndoHunk)'      , 'Undo Hunk'],
+"       \ 'p' : ['<Plug>(GitGutterPreviewHunk)'      , 'Preview Hunk'],
+"       \ }
 

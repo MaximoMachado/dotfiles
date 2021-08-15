@@ -32,12 +32,12 @@ if !exists('g:vscode')
 
     if !exists('g:started_by_firenvim')
         luafile $HOME/.config/nvim/lua/galaxyline-config.lua
-        source $HOME/.config/nvim/plug-config/coc.vim
-        source $HOME/.config/nvim/plug-config/coc-extensions.vim
-        source $HOME/.config/nvim/plug-config/gitgutter.vim
+        " source $HOME/.config/nvim/plug-config/coc.vim
+        " source $HOME/.config/nvim/plug-config/coc-extensions.vim
+        " source $HOME/.config/nvim/plug-config/gitgutter.vim
         source $HOME/.config/nvim/plug-config/tmux-navigator.vim
         luafile $HOME/.config/nvim/lua/treesitter.lua
-        luafile $HOME/.config/nvim/lua/treesitter-playground.lua
+        " luafile $HOME/.config/nvim/lua/treesitter-playground.lua
     else
         source $HOME/.config/nvim/plug-config/firenvim.vim
     end

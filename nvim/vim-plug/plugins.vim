@@ -44,7 +44,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Neovim in the Browser
         Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
         " View Treesitter Information
-        Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
+        " Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
         " Commenting
         Plug 'tpope/vim-commentary'
         " Which Key
@@ -74,7 +74,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
             " Plug 'vim-airline/vim-airline-themes'
 
             " COC Stable Version
-            Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+            " Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
             " Seamless integration with Tmux
             Plug 'christoomey/vim-tmux-navigator'
@@ -85,7 +85,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
             " Changes current directory to project directory for better searching
             Plug 'airblade/vim-rooter'
             " Git integration
-            Plug 'airblade/vim-gitgutter'
+            " Plug 'airblade/vim-gitgutter'
         end
     endif
 call plug#end()
