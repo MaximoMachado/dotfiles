@@ -9,9 +9,9 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Syntax Tree to allow highlighting / text objects
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     " Text objects for functions, classes, blocks, etc.
-    Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+    " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
     " Highlight unique letters in each word for f/t
     Plug 'unblevable/quick-scope'
@@ -65,7 +65,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'norcalli/nvim-colorizer.lua'
 
         " Custom Modes Framework
-        Plug 'Iron-E/nvim-libmodal'
+        " Plug 'Iron-E/nvim-libmodal'
 
         if !exists('g:started_by_firenvim')
             " Status Bar 

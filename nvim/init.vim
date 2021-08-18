@@ -36,7 +36,7 @@ if !exists('g:vscode')
         " source $HOME/.config/nvim/plug-config/coc-extensions.vim
         " source $HOME/.config/nvim/plug-config/gitgutter.vim
         source $HOME/.config/nvim/plug-config/tmux-navigator.vim
-        luafile $HOME/.config/nvim/lua/treesitter.lua
+        " luafile $HOME/.config/nvim/lua/treesitter.lua
         " luafile $HOME/.config/nvim/lua/treesitter-playground.lua
     else
         source $HOME/.config/nvim/plug-config/firenvim.vim
@@ -46,7 +46,7 @@ else
 endif
 
 source $HOME/.config/nvim/plug-config/quickscope.vim
-luafile $HOME/.config/nvim/lua/treesitter-textobjs.lua
+" luafile $HOME/.config/nvim/lua/treesitter-textobjs.lua
 
 " Make sure automatic new-line comments are gone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
