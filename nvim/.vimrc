@@ -50,12 +50,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Smooth Scrolling
     Plug 'psliwka/vim-smoothie'
     " fzf Installation
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    " Plug 'junegunn/fzf.vim'
     " Changes current directory to project directory for better searching
-    Plug 'airblade/vim-rooter'
+    " Plug 'airblade/vim-rooter'
     " Git integration
-    Plug 'airblade/vim-gitgutter'
+    " Plug 'airblade/vim-gitgutter'
     Plug 'easymotion/vim-easymotion'
 call plug#end()
 
@@ -76,8 +76,8 @@ source $HOME/.config/nvim/themes/onedark.vim
 
 " Plugin Setup
 source $HOME/.config/nvim/keys/which-key.vim
-source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/gitgutter.vim
+" source $HOME/.config/nvim/plug-config/fzf.vim
+" source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/tmux-navigator.vim
 
 source $HOME/.config/nvim/plug-config/quickscope.vim
