@@ -5,3 +5,10 @@
 	defaultBranch = main
 [credential]
 	helper = "/mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+[alias]
+    co = checkout
+    cob = "checkout -b"
+    lol = "log --graph --oneline --decorate --color --all"
+    df = "diff HEAD"
+    s = "status"
+
