@@ -11,6 +11,7 @@
 !/joplin/
 !/cava/
 !/.ssh
+!/setup-files
 
 # Files to include
 !.gitignore
