@@ -15,5 +15,13 @@
 # Files to include
 !.gitignore
 !README.md
-!setup.fish
+
 !.gitconfig
+!.zshrc
+
+
+!setup.fish
+!starship-setup.sh
+!link-configs.sh
+
+
