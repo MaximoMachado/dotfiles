@@ -104,7 +104,6 @@ fi
 # Aliases
 # alias nvim="~/.local/bin/nvim"
 alias fd="fdfind"
-alias rg="ripgrep"
 
 alias cdc="cd ~/.config"
 
@@ -116,9 +115,9 @@ alias ff="fd --type f | fzf"
 # Find directories in current directory
 alias fdir="fd --type d | fzf"
 # Find files and directories in home directory
-# alias fcd="cd $(fd --type d . ~ | fzf --preview="tree -CL 2 {}" || echo "./")"
+alias fcd="cd \$(fd --type d . ~ | fzf --preview='tree -CL 2 {}' || echo './')"
 # Search apt packages and install one
-# alias fapt="sudo apt install $(apt list | rg -o ".*?/" | sed \'s/.$//\' | fzf -m --preview="apt info {}")"
+alias fapt="sudo apt-get install \$(apt list | rg -o '.*?/' | sed 's/.$//' | fzf -m --preview='apt info {}')"
 
 # Starship prompt
 eval "$(starship init zsh)"
@@ -148,3 +147,4 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
