@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env sh
 
 ln ~/.config/.gitconfig ~/.gitconfig -s
 
