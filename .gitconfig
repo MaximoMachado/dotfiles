@@ -10,5 +10,6 @@
     cob = "checkout -b"
     lol = "log --graph --oneline --decorate --color --all"
     df = "diff --staged"
+    dfu = "diff HEAD"
     s = "status"
 
