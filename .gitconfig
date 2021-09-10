@@ -1,5 +1,5 @@
 [user]
-	email = maximomachado246@gmail.com
+	email = maximo@mit.edu
 	name = Maximo Machado
 [init]
 	defaultBranch = main
@@ -9,6 +9,6 @@
     co = checkout
     cob = "checkout -b"
     lol = "log --graph --oneline --decorate --color --all"
-    df = "diff HEAD"
+    df = "diff --staged"
     s = "status"
 
