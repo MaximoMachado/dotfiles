@@ -12,4 +12,5 @@
     df = "diff --staged"
     dfu = "diff HEAD"
     s = "status"
+    undo = "reset HEAD~"
 
