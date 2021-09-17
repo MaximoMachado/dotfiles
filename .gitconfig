@@ -6,9 +6,11 @@
 [credential]
 	helper = "/mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
 [alias]
-    co = checkout
-    cob = "checkout -b"
     lol = "log --graph --oneline --decorate --color --all"
+    lols = "log --graph --oneline --decorate --color --all --stat"
+    lmao = "log --graph --oneline --decorate --color --all --name-status"
+    co = "checkout"
+    cob = "checkout -b"
     df = "diff --staged"
     dfu = "diff HEAD"
     s = "status"
