@@ -107,6 +107,7 @@ alias fd="fdfind"
 
 alias cdc="cd ~/.config"
 alias bonsai="tree -L 2"
+alias gdbm="gdb-multiarch"
 
 # Git aliases that don't work in config
 alias gitcoma="git add -A && git commit -am "
