@@ -8,11 +8,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Syntax Tree to allow highlighting / text objects
-    " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-    " Text objects for functions, classes, blocks, etc.
-    " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-
     " Highlight unique letters in each word for f/t
     Plug 'unblevable/quick-scope'
     " Swap text in two locations
@@ -22,8 +17,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Allows easy changing of surrounding chars
     Plug 'machakann/vim-sandwich'
-    " Support for Latex Text-Objs and other keybinds
-    Plug 'lervag/vimtex'
 
     " Custom Text Objects Framework
     Plug 'kana/vim-textobj-user'
@@ -41,10 +34,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     if exists('g:vscode')
         Plug 'MaximoMachado/vscode-easymotion'
     else
-        " Neovim in the Browser
-        Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-        " View Treesitter Information
-        " Plug 'nvim-treesitter/playground', { 'on': 'TSPlaygroundToggle' }
         " Commenting
         Plug 'tpope/vim-commentary'
         " Which Key
@@ -64,29 +53,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Lua Scripts
         Plug 'norcalli/nvim-colorizer.lua'
 
-        " Custom Modes Framework
-        " Plug 'Iron-E/nvim-libmodal'
+        " Status Bar 
+        Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
-        if !exists('g:started_by_firenvim')
-            " Status Bar 
-            Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-            " Plug 'vim-airline/vim-airline'
-            " Plug 'vim-airline/vim-airline-themes'
+        " Seamless integration with Tmux
+        Plug 'christoomey/vim-tmux-navigator'
 
-            " COC Stable Version
-            " Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-
-            " Seamless integration with Tmux
-            Plug 'christoomey/vim-tmux-navigator'
-
-            " fzf Installation
-            Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-            Plug 'junegunn/fzf.vim'
-            " Changes current directory to project directory for better searching
-            Plug 'airblade/vim-rooter'
-            " Git integration
-            " Plug 'airblade/vim-gitgutter'
-        end
+        " fzf Installation
+        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+        Plug 'junegunn/fzf.vim'
+        " Changes current directory to project directory for better searching
+        Plug 'airblade/vim-rooter'
     endif
 call plug#end()
 

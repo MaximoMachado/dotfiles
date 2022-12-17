@@ -27,26 +27,13 @@ if !exists('g:vscode')
     source $HOME/.config/nvim/plug-config/fzf.vim
     luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
-    source $HOME/.config/nvim/plug-config/libmodal.vim
-    luafile $HOME/.config/nvim/lua/modes/tabmode.lua
-
-    if !exists('g:started_by_firenvim')
-        luafile $HOME/.config/nvim/lua/galaxyline-config.lua
-        " source $HOME/.config/nvim/plug-config/coc.vim
-        " source $HOME/.config/nvim/plug-config/coc-extensions.vim
-        " source $HOME/.config/nvim/plug-config/gitgutter.vim
-        source $HOME/.config/nvim/plug-config/tmux-navigator.vim
-        " luafile $HOME/.config/nvim/lua/treesitter.lua
-        " luafile $HOME/.config/nvim/lua/treesitter-playground.lua
-    else
-        source $HOME/.config/nvim/plug-config/firenvim.vim
-    end
+    luafile $HOME/.config/nvim/lua/galaxyline-config.lua
+    source $HOME/.config/nvim/plug-config/tmux-navigator.vim
 else
     source $HOME/.config/nvim/vscode/settings.vim    
 endif
 
 source $HOME/.config/nvim/plug-config/quickscope.vim
-" luafile $HOME/.config/nvim/lua/treesitter-textobjs.lua
 
 " Make sure automatic new-line comments are gone
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
