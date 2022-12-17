@@ -70,7 +70,6 @@ source $HOME/.config/nvim/themes/onedark.vim
 " Plugin Setup
 source $HOME/.config/nvim/keys/which-key.vim
 " source $HOME/.config/nvim/plug-config/fzf.vim
-" source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/tmux-navigator.vim
 
 source $HOME/.config/nvim/plug-config/quickscope.vim

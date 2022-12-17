@@ -18,8 +18,6 @@ let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
 
-let g:which_key_map['<Tab>'] = 'Enter Tab Mode'
-
 let g:which_key_map['|'] = 'Split Vertically'
 let g:which_key_map['-'] = 'Split Horizontally'
 
@@ -42,50 +40,14 @@ let g:which_key_map['+'] = {
       \ 'q' : ['', 'Query Character'],
       \ 'qq' : ['', 'Auto Query'],
       \ 'v' : ['', 'Variable Name Segment'],
-      \ 'L' : {
-          \     'name' : '+ List LaTeX Objects',
-          \     'c'   : ['', 'Command'],
-          \     'd'   : ['', 'Delimiter'],
-          \     'e'   : ['', 'Environment'],
-          \     '$'   : ['', 'Inline Math'],
-          \     'P'   : ['', 'Section'],
-          \     'm'   : ['', 'Item'],
-          \   },
       \ 's' : {
           \     'name' : '+ List Surround Objects',
           \     'f'    : ['', 'Function'],
           \     't'    : ['', 'HTML Tag'],
           \     'i'    : ['', 'Custom Head/Tail'],
-          \     'c'    : ['', 'LaTex Import/Include'],
-          \     'e'    : ['', 'LaTeX Environment'],
-          \     'ma'   : ['', 'LaTeX Math Brackets'],
-          \     'Ma'   : ['', 'LaTeX Big Math Brackets'],
           \   }
       \ }
 
-" Plugins
-" let g:which_key_map['e'] = 'Explorer'
-" let g:which_key_map['a'] = 'Code Actions'
-" let g:which_key_map['ac'] = 'Code Actions on Buffer'
-" let g:which_key_map['f'] = 'Quick Fix'
-
 let g:which_key_map['<'] = 'Swap Argument Left'
 let g:which_key_map['>'] = 'Swap Argument Right'
-
-let g:which_key_map.s = {
-      \ 'name' : '+ Search' ,
-      \ 'b' : [':Buffers'      , 'Search Buffers'],
-      \ 'm' : [':Marks'        , 'Marks'] ,
-      \ 't' : [':Tags'         , 'Tags'],
-      \ 'g' : [':Rg'           , 'Search File Content'],
-      \ 'f' : [':FZF'          , 'Search Files'],
-      \ }
-
-" Git-Gutter Keys
-" let g:which_key_map.g = {
-"       \ 'name' : '+ Git' ,
-"       \ 's' : ['<Plug>(GitGutterStageHunk)'      , 'Stage Hunk'],
-"       \ 'u' : ['<Plug>(GitGutterUndoHunk)'      , 'Undo Hunk'],
-"       \ 'p' : ['<Plug>(GitGutterPreviewHunk)'      , 'Preview Hunk'],
-"       \ }
 
