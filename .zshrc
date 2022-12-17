@@ -70,7 +70,7 @@ export ZSH="/home/maximo/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,6 +111,7 @@ alias gdbm="gdb-multiarch"
 
 # Git aliases that don't work in config
 alias gitcoma="git add -A && git commit -am "
+alias gitfs="git fetch && git status"
 
 # Find files in current directory
 alias ff="fd --type f | fzf"
@@ -120,6 +121,9 @@ alias fdir="fd --type d | fzf"
 alias fcd="cd \$(fd --type d . ~ | fzf --preview='tree -CL 2 {}' || echo './')"
 # Search apt packages and install one
 alias fapt="sudo apt-get install \$(apt list | rg -o '.*?/' | sed 's/.$//' | fzf -m --preview='apt info {}')"
+alias winscap="/mnt/c/Users/maxim/Desktop/Home/Applications/Music\ Production/winscap.exe 2 48000 16 > /tmp/cava.fifo"
+alias mnt_1060="sshfs maximo@athena.dialup.mit.edu: ~/22fall/6.1060/athena"
+alias umnt_1060="fusermount3 -u ~/22fall/6.1060/athena"
 
 # Starship prompt
 eval "$(starship init zsh)"
@@ -127,6 +131,7 @@ eval "$(starship init zsh)"
 # Nvm Setup
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 
 # Automatically call `nvm use` on change directory
 autoload -U add-zsh-hook
