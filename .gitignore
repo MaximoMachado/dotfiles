@@ -5,10 +5,6 @@
 !/tmux/
 !/nvim/
 !/fish/
-!/alacritty/
-!/kitty/
-!/fusuma/
-!/joplin/
 !/cava/
 !/.ssh
 !/setup-files
