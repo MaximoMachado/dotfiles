@@ -24,11 +24,6 @@ if !exists('g:vscode')
     
     " Plugin Setup
     source $HOME/.config/nvim/keys/which-key.vim
-    source $HOME/.config/nvim/plug-config/fzf.vim
-    luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-
-    luafile $HOME/.config/nvim/lua/galaxyline-config.lua
-    source $HOME/.config/nvim/plug-config/tmux-navigator.vim
 else
     source $HOME/.config/nvim/vscode/settings.vim    
 endif
