@@ -1,0 +1,19 @@
+colors:
+  body: none
+  date: red
+  tags: yellow
+  title: blue
+default_hour: 9
+default_minute: 0
+editor: nvim
+encrypt: false
+highlight: true
+indent_character: '|'
+journals:
+  daily: /home/maximo/documents/journal/daily/
+  projects: /home/maximo/documents/journal/projects/
+linewrap: 79
+tagsymbols: '#@'
+template: false
+timeformat: '%Y-%m-%d %H:%M'
+version: v2.8.4
