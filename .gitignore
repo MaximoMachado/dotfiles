@@ -8,6 +8,7 @@
 !/cava/
 !/.ssh
 !/setup-files
+!/jrnl/
 
 # Files to include
 !.gitignore
