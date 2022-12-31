@@ -104,6 +104,7 @@ fi
 # Aliases
 # alias nvim="~/.local/bin/nvim"
 alias fd="fdfind"
+alias bat="batcat"
 
 alias cdc="cd ~/.config"
 alias bonsai="tree -L 2"
