@@ -95,14 +95,10 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 
 # Aliases
-# alias nvim="~/.local/bin/nvim"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 alias fd="fdfind"
 alias bat="batcat"
 
@@ -114,6 +110,9 @@ alias gdbm="gdb-multiarch"
 alias gitcoma="git add -A && git commit -am "
 alias gitfs="git fetch && git status"
 
+alias ex="exa --icons"
+alias el="exa --long --header --git --icons"
+
 # Find files in current directory
 alias ff="fd --type f | fzf"
 # Find directories in current directory
@@ -122,6 +121,7 @@ alias fdir="fd --type d | fzf"
 alias fcd="cd \$(fd --type d . ~ | fzf --preview='tree -CL 2 {}' || echo './')"
 # Search apt packages and install one
 alias fapt="sudo apt-get install \$(apt list | rg -o '.*?/' | sed 's/.$//' | fzf -m --preview='apt info {}')"
+# Used to enable cava with Windows audio input to WSL
 alias winscap="/mnt/c/Users/maxim/Desktop/Home/Applications/Music\ Production/winscap.exe 2 48000 16 > /tmp/cava.fifo"
 alias mnt_1060="sshfs maximo@athena.dialup.mit.edu: ~/22fall/6.1060/athena"
 alias umnt_1060="fusermount3 -u ~/22fall/6.1060/athena"
