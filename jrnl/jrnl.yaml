@@ -3,7 +3,7 @@ colors:
   date: red
   tags: yellow
   title: blue
-default_hour: 9
+default_hour: 22
 default_minute: 0
 editor: nvim
 encrypt: false
